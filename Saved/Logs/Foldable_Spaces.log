@@ -1612,3 +1612,791 @@ Script Stack (0 frames):
 [2021.05.06-14.50.43:134][766]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door59F016A94C542B140E085490D45E4CB7.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
 [2021.05.06-14.50.43:149][766]AssetCheck: New page: Asset Save: Door
 [2021.05.06-14.50.43:149][766]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-14.51.00:264][257]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-14.51.00:332][257]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door68AE5413411DEEBB13EAC18B08375D86.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-14.51.00:348][257]AssetCheck: New page: Asset Save: Door
+[2021.05.06-14.51.00:348][257]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-14.51.02:882][473]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Foldable" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/Foldable.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.05.06-14.51.02:903][473]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2021.05.06-14.51.02:932][473]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Foldable8570F97C4439C0950C534C8D481065DE.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/Foldable.umap'
+[2021.05.06-14.51.02:936][473]LogFileHelpers: Saving map 'Foldable' took 0.055
+[2021.05.06-14.51.02:949][473]AssetCheck: New page: Asset Save: Foldable
+[2021.05.06-14.51.02:949][473]LogContentValidation: Display: Validating World /Game/Maps/Foldable.Foldable
+[2021.05.06-14.51.05:748][692]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/VR_Pawn.VR_Pawn
+[2021.05.06-14.51.10:330][939]LogEditorTransaction: Undo Delete current selection
+[2021.05.06-14.51.54:501][578]LogSlate: Took 0.000189 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2021.05.06-14.52.50:783][130]BlueprintLog: New page: Compile VR_Pawn
+[2021.05.06-14.52.50:851][130]LogUObjectHash: Compacting FUObjectHashTables data took   2.38ms
+[2021.05.06-14.52.51:364][148]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/VR_Pawn" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/VR_Pawn.uasset" SILENT=true
+[2021.05.06-14.52.51:424][148]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/VR_PawnFCFCAB784AEFF48F91CAB4A2644A2D6A.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/VR_Pawn.uasset'
+[2021.05.06-14.52.51:437][148]AssetCheck: New page: Asset Save: VR_Pawn
+[2021.05.06-14.52.51:437][148]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/VR_Pawn.VR_Pawn
+[2021.05.06-14.53.22:114][100]BlueprintLog: New page: Compile VR_Pawn
+[2021.05.06-14.53.22:178][100]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2021.05.06-14.53.22:545][113]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/VR_Pawn" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/VR_Pawn.uasset" SILENT=true
+[2021.05.06-14.53.22:605][113]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/VR_Pawn8BFEF71541E8B395AED2D3A9EDE5FD17.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/VR_Pawn.uasset'
+[2021.05.06-14.53.22:618][113]AssetCheck: New page: Asset Save: VR_Pawn
+[2021.05.06-14.53.22:618][113]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/VR_Pawn.VR_Pawn
+[2021.05.06-14.53.30:465][567]BlueprintLog: New page: Compile VR_Pawn
+[2021.05.06-14.53.30:532][567]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2021.05.06-14.53.40:557][170]LogBlueprint: Warning: [AssetLog] C:\Users\hanji\Desktop\Workshop\Foldable_Spaces\Content\Blueprints\VR_Pawn.uasset: [Compiler] Variable DirectionOfTravel is marked as 'Expose on Spawn' but not marked as 'Instance Editable'; please make it 'Instance Editable'
+[2021.05.06-14.53.42:249][250]BlueprintLog: New page: Compile VR_Pawn
+[2021.05.06-14.53.42:316][250]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2021.05.06-14.53.42:664][261]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/VR_Pawn" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/VR_Pawn.uasset" SILENT=true
+[2021.05.06-14.53.42:726][261]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/VR_Pawn98B604C14EC4BE2B134D56B1528174E1.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/VR_Pawn.uasset'
+[2021.05.06-14.53.42:739][261]AssetCheck: New page: Asset Save: VR_Pawn
+[2021.05.06-14.53.42:739][261]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/VR_Pawn.VR_Pawn
+[2021.05.06-14.54.24:052][662]LogEditorTransaction: Undo Delete current selection
+[2021.05.06-14.54.31:686][104]BlueprintLog: New page: Compile VR_Pawn
+[2021.05.06-14.54.31:756][104]LogUObjectHash: Compacting FUObjectHashTables data took   3.31ms
+[2021.05.06-14.54.32:130][116]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/VR_Pawn" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/VR_Pawn.uasset" SILENT=true
+[2021.05.06-14.54.32:193][116]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/VR_Pawn7B79F87F4445A76F4544B28D93B46AE6.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/VR_Pawn.uasset'
+[2021.05.06-14.54.32:206][116]AssetCheck: New page: Asset Save: VR_Pawn
+[2021.05.06-14.54.32:206][116]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/VR_Pawn.VR_Pawn
+[2021.05.06-14.54.46:626][967]BlueprintLog: New page: Compile VR_Pawn
+[2021.05.06-14.54.46:693][967]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2021.05.06-14.54.47:298][994]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/VR_Pawn" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/VR_Pawn.uasset" SILENT=true
+[2021.05.06-14.54.47:371][994]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/VR_Pawn8C65BD56442030A173115E96644D2A55.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/VR_Pawn.uasset'
+[2021.05.06-14.54.47:387][994]AssetCheck: New page: Asset Save: VR_Pawn
+[2021.05.06-14.54.47:387][994]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/VR_Pawn.VR_Pawn
+[2021.05.06-14.56.56:357][126]BlueprintLog: New page: Compile Door
+[2021.05.06-14.56.56:478][126]LogUObjectHash: Compacting FUObjectHashTables data took   2.94ms
+[2021.05.06-14.57.01:765][407]LogEditorTransaction: Undo Modify Component(s)
+[2021.05.06-14.57.06:891][679]LogEditorTransaction: Undo Modify Component Location
+[2021.05.06-14.57.09:374][808]BlueprintLog: New page: Compile Door
+[2021.05.06-14.57.09:485][808]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2021.05.06-14.58.46:060][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_14 via property DoorCollisionH, but TRASH_BoxComponent_14 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door_2
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-14.58.46:060][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_14 via property DoorCollisionH, but TRASH_BoxComponent_14 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door_2
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-14.58.46:064][125]LogScript: Warning: Attempted to access DoorCollisionH via property DoorCollisionH, but DoorCollisionH is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door2
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0EC1
+[2021.05.06-14.58.46:070][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_14 via property DoorCollisionH, but TRASH_BoxComponent_14 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door3
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-14.58.46:070][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_14 via property DoorCollisionH, but TRASH_BoxComponent_14 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door3
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-14.58.46:074][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_14 via property DoorCollisionH, but TRASH_BoxComponent_14 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door4
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-14.58.46:074][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_14 via property DoorCollisionH, but TRASH_BoxComponent_14 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door4
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-14.58.46:078][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_14 via property DoorCollisionH, but TRASH_BoxComponent_14 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door5_2
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-14.58.46:078][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_14 via property DoorCollisionH, but TRASH_BoxComponent_14 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door5_2
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-14.58.46:082][125]LogScript: Warning: Attempted to access DoorCollisionH via property DoorCollisionH, but DoorCollisionH is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door6
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0EC1
+[2021.05.06-14.58.46:086][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_20 via property DoorCollisionH, but TRASH_BoxComponent_20 is pending kill
+	Door_C /Engine/Transient.World_0:PersistentLevel.Door_C_0
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-14.58.46:086][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_20 via property DoorCollisionH, but TRASH_BoxComponent_20 is pending kill
+	Door_C /Engine/Transient.World_0:PersistentLevel.Door_C_0
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-14.58.46:149][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_20 via property DoorCollisionH, but TRASH_BoxComponent_20 is pending kill
+	Door_C /Engine/Transient.World_0:PersistentLevel.Door_C_0
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-14.58.46:149][125]LogScript: Warning: Attempted to access TRASH_BoxComponent_20 via property DoorCollisionH, but TRASH_BoxComponent_20 is pending kill
+	Door_C /Engine/Transient.World_0:PersistentLevel.Door_C_0
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-14.58.50:293][363]BlueprintLog: New page: Compile Door
+[2021.05.06-14.58.50:399][363]LogUObjectHash: Compacting FUObjectHashTables data took   2.94ms
+[2021.05.06-14.58.52:200][458]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-14.58.52:284][458]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door31710EBE4303D681504406947EFCCB6D.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-14.58.52:301][458]AssetCheck: New page: Asset Save: Door
+[2021.05.06-14.58.52:301][458]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-14.59.14:727][177]LogEditorViewport: Clicking on Actor (LMB): Door_C (Door)
+[2021.05.06-14.59.34:418][104]Cmd: TRANSACTION UNDO
+[2021.05.06-14.59.34:418][104]LogEditorTransaction: Undo Set Rotation
+[2021.05.06-14.59.35:277][152]Cmd: TRANSACTION UNDO
+[2021.05.06-14.59.35:277][152]LogEditorTransaction: Undo Set Rotation
+[2021.05.06-14.59.44:444][987]Cmd: TRANSACTION UNDO
+[2021.05.06-14.59.44:444][987]LogEditorTransaction: Undo Set Rotation
+[2021.05.06-14.59.48:023][267]Cmd: TRANSACTION UNDO
+[2021.05.06-14.59.48:023][267]LogEditorTransaction: Undo Set Rotation
+[2021.05.06-15.01.10:232][718]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2021.05.06-15.01.10:261][718]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Foldable_Auto198A5FCAA4EA3C804DB8ED1B76FC08BBC.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Maps/Foldable_Auto1.umap'
+[2021.05.06-15.01.10:262][718]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Foldable' took 0.056
+[2021.05.06-15.01.10:262][718]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.056
+[2021.05.06-15.02.05:945][229]LogEditorTransaction: Undo Set Rotation
+[2021.05.06-15.02.07:015][269]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.02.07:497][291]LogEditorTransaction: Undo Break Pin Links
+[2021.05.06-15.02.08:022][316]LogEditorTransaction: Undo Set Rotation
+[2021.05.06-15.02.43:832][380]LogEditorTransaction: Undo Change Variable Category
+[2021.05.06-15.02.45:894][482]LogEditorTransaction: Redo Change Variable Category
+[2021.05.06-15.05.54:400][176]LogSlate: Window 'Color Picker' being destroyed
+[2021.05.06-15.06.13:455][331]BlueprintLog: New page: Compile Door
+[2021.05.06-15.06.13:582][331]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2021.05.06-15.06.14:369][368]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.06.14:439][368]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door5397CB4E44E090F499CC72BE7427D945.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.06.14:452][368]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.06.14:452][368]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.06.35:208][562]LogEditorTransaction: Undo Modify Component(s)
+[2021.05.06-15.06.36:223][601]BlueprintLog: New page: Compile Door
+[2021.05.06-15.06.36:351][601]LogUObjectHash: Compacting FUObjectHashTables data took   2.93ms
+[2021.05.06-15.08.36:281][790]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.08.36:592][795]LogEditorTransaction: Undo Move Nodes
+[2021.05.06-15.08.37:051][812]LogEditorTransaction: Undo Add Node
+[2021.05.06-15.09.02:777][313]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.09.03:024][317]LogEditorTransaction: Undo Delete current selection
+[2021.05.06-15.09.03:427][327]LogEditorTransaction: Undo Add Node
+[2021.05.06-15.09.03:806][345]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.09.33:825][116]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.09.33:897][116]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door3D17DDDC4E3736D3B18BD1BF050AF042.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.09.33:909][116]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.09.33:909][116]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.12.53:533][829]LogEditorTransaction: Undo Rename Node
+[2021.05.06-15.12.54:814][880]LogEditorTransaction: Undo Collapses selected nodes into a single node
+[2021.05.06-15.12.55:251][895]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.13.01:529][202]BlueprintLog: New page: Collapse to Function
+[2021.05.06-15.14.28:986][320]BlueprintLog: New page: Compile Door
+[2021.05.06-15.14.29:111][320]LogUObjectHash: Compacting FUObjectHashTables data took   2.47ms
+[2021.05.06-15.14.29:508][336]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.14.29:583][336]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door2C542F0F45BCC44A432C83860619C14D.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.14.29:596][336]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.14.29:597][336]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.16.10:563][435]BlueprintLog: New page: Compile Door
+[2021.05.06-15.16.10:671][435]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2021.05.06-15.16.27:758][444]BlueprintLog: New page: Compile Door
+[2021.05.06-15.16.27:868][444]LogUObjectHash: Compacting FUObjectHashTables data took   2.34ms
+[2021.05.06-15.18.20:734][308]BlueprintLog: New page: Compile Door
+[2021.05.06-15.18.20:848][308]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2021.05.06-15.18.21:348][330]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.18.21:429][330]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door6F1DB26B4ACC678F6B642F966386908E.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.18.21:443][330]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.18.21:443][330]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.18.33:774][322]LogTemp: Repeating last play command: VR Preview
+[2021.05.06-15.18.33:782][322]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-15.18.33:782][322]LogHMD: Initializing OVRPlugin session
+[2021.05.06-15.18.33:884][322]LogHMD: Allocating Oculus 2688 x 1600 rendertarget swapchain
+[2021.05.06-15.18.33:884][322]PIE: New page: PIE session: Foldable (06 May 2021, 19:18:33)
+[2021.05.06-15.18.33:884][322]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.18.33:892][322]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007286s)
+[2021.05.06-15.18.33:893][322]LogAIModule: Creating AISystem for world Foldable
+[2021.05.06-15.18.33:893][322]LogPlayLevel: PIE: World Init took: (0.001099s)
+[2021.05.06-15.18.33:893][322]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Foldable.Foldable to /Game/Maps/UEDPIE_0_Foldable.Foldable (0.008513s)
+[2021.05.06-15.18.33:919][322]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
+[2021.05.06-15.18.33:922][322]LogAudio: Display: Creating Audio Device:                 Id: 9, Scope: Unique, Realtime: True
+[2021.05.06-15.18.33:922][322]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-15.18.33:922][322]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-15.18.33:922][322]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-15.18.33:922][322]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-15.18.33:922][322]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-15.18.33:922][322]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-15.18.33:922][322]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-15.18.33:922][322]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-15.18.33:922][322]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-15.18.33:922][322]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-15.18.33:925][322]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.18.33:925][322]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.18.33:925][322]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.18.33:925][322]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.18.33:926][322]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.18.33:926][322]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.18.33:927][322]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.18.33:927][322]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.18.33:940][322]LogAudioMixer: Display: Using Audio Device Headphones (Rift Audio)
+[2021.05.06-15.18.33:940][322]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-15.18.33:940][322]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-15.18.33:940][322]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-15.18.33:941][322]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-15.18.33:941][322]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-15.18.33:941][322]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.06-15.18.33:954][322]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-15.18.33:954][322]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-15.18.33:954][322]LogInit: FAudioDevice initialized.
+[2021.05.06-15.18.33:954][322]LogAudio: Display: Audio Device (ID: 9) registered with world 'Foldable'.
+[2021.05.06-15.18.33:966][322]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.18.34:014][322]LogLoad: Game class is 'VR_Mode_C'
+[2021.05.06-15.18.34:025][322]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Foldable.Foldable up for play (max tick rate 0) at 2021.05.06-17.18.34
+[2021.05.06-15.18.34:026][322]LogWorld: Bringing up level for play took: 0.010397
+[2021.05.06-15.18.34:026][322]LogOnline: OSS: Creating online subsystem instance for: :Context_20
+[2021.05.06-15.18.34:042][322]PIE: Server logged in
+[2021.05.06-15.18.34:050][322]PIE: Play in editor total start time 0,27 seconds.
+[2021.05.06-15.18.34:050][322]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.18.34:067][322]LogHMD: Allocating Oculus 2688 x 1600 depth rendertarget swapchain
+[2021.05.06-15.19.18:633][419]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.19.18:633][419]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.19.18:688][419]LogSlate: Window 'Foldable_Spaces Preview [NetMode: Standalone]  (64-bit/Windows) OculusHMD' being destroyed
+[2021.05.06-15.19.18:726][419]LogWorld: UWorld::CleanupWorld for Foldable, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-15.19.18:729][419]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.19.18:754][419]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-15.19.18:770][419]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.19.18:803][419]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.06-15.19.18:804][419]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.19.18:805][419]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.19.18:842][419]LogUObjectHash: Compacting FUObjectHashTables data took   3.48ms
+[2021.05.06-15.19.18:887][420]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2021.05.06-15.19.18:897][420]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.19.20:133][520]LogTemp: Repeating last play command: VR Preview
+[2021.05.06-15.19.20:140][520]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-15.19.20:140][520]LogHMD: Initializing OVRPlugin session
+[2021.05.06-15.19.20:264][520]LogHMD: Allocating Oculus 2688 x 1600 rendertarget swapchain
+[2021.05.06-15.19.20:264][520]PIE: New page: PIE session: Foldable (06 May 2021, 19:19:20)
+[2021.05.06-15.19.20:264][520]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.19.20:278][520]LogPlayLevel: PIE: StaticDuplicateObject took: (0.014087s)
+[2021.05.06-15.19.20:280][520]LogAIModule: Creating AISystem for world Foldable
+[2021.05.06-15.19.20:280][520]LogPlayLevel: PIE: World Init took: (0.001651s)
+[2021.05.06-15.19.20:280][520]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Foldable.Foldable to /Game/Maps/UEDPIE_0_Foldable.Foldable (0.015939s)
+[2021.05.06-15.19.20:304][520]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2021.05.06-15.19.20:306][520]LogAudio: Display: Creating Audio Device:                 Id: 10, Scope: Unique, Realtime: True
+[2021.05.06-15.19.20:306][520]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-15.19.20:306][520]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-15.19.20:306][520]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-15.19.20:306][520]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-15.19.20:306][520]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-15.19.20:306][520]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-15.19.20:306][520]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-15.19.20:306][520]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-15.19.20:306][520]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-15.19.20:306][520]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-15.19.20:308][520]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.19.20:308][520]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.19.20:309][520]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.19.20:309][520]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.19.20:310][520]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.19.20:310][520]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.19.20:312][520]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.19.20:312][520]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.19.20:322][520]LogAudioMixer: Display: Using Audio Device Headphones (Rift Audio)
+[2021.05.06-15.19.20:322][520]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-15.19.20:323][520]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-15.19.20:323][520]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-15.19.20:323][520]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-15.19.20:323][520]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-15.19.20:323][520]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.06-15.19.20:339][520]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-15.19.20:339][520]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-15.19.20:339][520]LogInit: FAudioDevice initialized.
+[2021.05.06-15.19.20:339][520]LogAudio: Display: Audio Device (ID: 10) registered with world 'Foldable'.
+[2021.05.06-15.19.20:350][520]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.19.20:398][520]LogLoad: Game class is 'VR_Mode_C'
+[2021.05.06-15.19.20:406][520]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Foldable.Foldable up for play (max tick rate 0) at 2021.05.06-17.19.20
+[2021.05.06-15.19.20:408][520]LogWorld: Bringing up level for play took: 0.008986
+[2021.05.06-15.19.20:408][520]LogOnline: OSS: Creating online subsystem instance for: :Context_21
+[2021.05.06-15.19.20:418][520]PIE: Server logged in
+[2021.05.06-15.19.20:420][520]PIE: Play in editor total start time 0,28 seconds.
+[2021.05.06-15.19.20:420][520]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.19.20:429][520]LogHMD: Allocating Oculus 2688 x 1600 depth rendertarget swapchain
+[2021.05.06-15.19.45:691][810]PIE: Warning: AttachTo: '/Game/Maps/UEDPIE_0_Foldable.Foldable:PersistentLevel.Dragon.SkeletalMeshComponent0' cannot be attached to itself. Aborting.
+[2021.05.06-15.19.45:915][830]PIE: Warning: AttachTo: '/Game/Maps/UEDPIE_0_Foldable.Foldable:PersistentLevel.Dragon.SkeletalMeshComponent0' cannot be attached to itself. Aborting.
+[2021.05.06-15.19.46:237][859]PIE: Warning: AttachTo: '/Game/Maps/UEDPIE_0_Foldable.Foldable:PersistentLevel.Dragon.SkeletalMeshComponent0' cannot be attached to itself. Aborting.
+[2021.05.06-15.22.12:821][ 24]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.22.12:821][ 24]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.22.12:874][ 24]LogSlate: Window 'Foldable_Spaces Preview [NetMode: Standalone]  (64-bit/Windows) OculusHMD' being destroyed
+[2021.05.06-15.22.12:907][ 24]LogWorld: UWorld::CleanupWorld for Foldable, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-15.22.12:908][ 24]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.22.12:924][ 24]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-15.22.12:940][ 24]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.22.12:973][ 24]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.22.12:974][ 24]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.22.13:006][ 24]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2021.05.06-15.22.13:154][ 25]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2021.05.06-15.22.13:159][ 25]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.22.16:897][288]LogSlate: Window 'Message Log' being destroyed
+[2021.05.06-15.22.16:911][288]LogSlate: Window 'Message Log' being destroyed
+[2021.05.06-15.22.42:969][794]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
+[2021.05.06-15.22.43:005][794]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Foldable_Auto2798E8C7949E69B5E2CDED79A9FBF6F81.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Maps/Foldable_Auto2.umap'
+[2021.05.06-15.22.43:007][794]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Foldable' took 0.065
+[2021.05.06-15.22.43:007][794]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.065
+[2021.05.06-15.26.05:090][319]LogSelectionDetails: Warning: NavigateToFunctionSource:  Unable to find source file and line number for 'USceneComponent::K2_GetComponentLocation' [Attempt to access invalid address.]
+[2021.05.06-15.27.01:892][757]LogEditorTransaction: Undo Modify Component(s)
+[2021.05.06-15.27.03:723][839]BlueprintLog: New page: Compile Door
+[2021.05.06-15.27.03:849][839]LogUObjectHash: Compacting FUObjectHashTables data took   2.72ms
+[2021.05.06-15.28.00:243][249]LogEditorTransaction: Undo Delete current selection
+[2021.05.06-15.28.00:471][252]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.28.00:943][265]LogEditorTransaction: Undo Break Pin Links
+[2021.05.06-15.28.01:380][285]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.28.01:899][311]LogEditorTransaction: Undo Change Vector Pin Value
+[2021.05.06-15.28.02:138][319]LogEditorTransaction: Undo Add Node
+[2021.05.06-15.28.02:333][326]LogEditorTransaction: Undo Add Node
+[2021.05.06-15.28.31:143][ 87]BlueprintLog: New page: Compile Door
+[2021.05.06-15.28.31:257][ 87]LogUObjectHash: Compacting FUObjectHashTables data took   2.20ms
+[2021.05.06-15.31.48:246][304]LogEditorViewport: Clicking on Actor (LMB): Door_C (Door)
+[2021.05.06-15.32.48:139][522]LogEditorViewport: Clicking on Actor (LMB): Actor (Actor)
+[2021.05.06-15.34.19:447][292]BlueprintLog: New page: Compile Door
+[2021.05.06-15.34.19:566][292]LogUObjectHash: Compacting FUObjectHashTables data took   2.33ms
+[2021.05.06-15.36.00:612][200]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2021.05.06-15.36.00:646][200]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Foldable_Auto3C915CAAC46CAE8A0E469E1A56CE67169.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Maps/Foldable_Auto3.umap'
+[2021.05.06-15.36.00:647][200]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Foldable' took 0.066
+[2021.05.06-15.36.00:647][200]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.066
+[2021.05.06-15.36.00:648][200]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Door] ([2] browsable assets)...
+[2021.05.06-15.36.00:648][200]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Door]
+[2021.05.06-15.36.00:648][200]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Blueprints/Door_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2021.05.06-15.36.00:731][200]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door_Auto38FF643464612A45BF07FE89DC16BDDF1.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Blueprints/Door_Auto3.uasset'
+[2021.05.06-15.36.00:733][200]LogFileHelpers: Auto-saving content packages took 0.086
+[2021.05.06-15.36.51:889][348]Cmd: SELECT NONE
+[2021.05.06-15.36.52:225][387]Cmd: SELECT NONE
+[2021.05.06-15.37.18:048][ 79]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.39.12:894][669]BlueprintLog: New page: Compile Door
+[2021.05.06-15.39.12:995][669]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2021.05.06-15.40.45:304][590]BlueprintLog: New page: Compile Door
+[2021.05.06-15.40.45:411][590]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2021.05.06-15.41.30:818][646]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.41.31:857][687]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.41.32:037][692]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.41.32:182][696]LogEditorTransaction: Undo Break Pin Links
+[2021.05.06-15.41.32:307][697]LogEditorTransaction: Undo Add Node
+[2021.05.06-15.41.32:448][701]LogEditorTransaction: Undo Move Nodes
+[2021.05.06-15.41.32:645][709]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.41.32:813][715]LogEditorTransaction: Undo Add Node
+[2021.05.06-15.41.32:979][721]LogEditorTransaction: Undo Add Node
+[2021.05.06-15.41.33:122][726]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.41.33:297][732]LogEditorTransaction: Undo Add Node
+[2021.05.06-15.41.33:460][738]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.41.33:630][744]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.41.33:804][751]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.41.33:973][757]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.41.34:154][764]LogEditorTransaction: Undo Add Node
+[2021.05.06-15.41.34:348][772]LogEditorTransaction: Undo Change Variable Category
+[2021.05.06-15.41.34:559][778]LogEditorTransaction: Undo Change Variable Category
+[2021.05.06-15.41.34:786][787]LogEditorTransaction: Undo Rename Variable
+[2021.05.06-15.41.34:980][793]LogEditorTransaction: Undo Rename Variable
+[2021.05.06-15.41.36:989][916]BlueprintLog: New page: Compile Door
+[2021.05.06-15.41.37:105][916]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2021.05.06-15.42.30:840][812]LogScript: Warning: Attempted to access TRASH_BoxComponent_40 via property DoorCollision, but TRASH_BoxComponent_40 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door_2
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-15.42.30:840][812]LogScript: Warning: Attempted to access TRASH_BoxComponent_40 via property DoorCollision, but TRASH_BoxComponent_40 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door_2
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-15.42.30:844][812]LogScript: Warning: Attempted to access DoorCollision via property DoorCollision, but DoorCollision is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door2
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0EC1
+[2021.05.06-15.42.30:849][812]LogScript: Warning: Attempted to access TRASH_BoxComponent_40 via property DoorCollision, but TRASH_BoxComponent_40 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door3
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-15.42.30:849][812]LogScript: Warning: Attempted to access TRASH_BoxComponent_40 via property DoorCollision, but TRASH_BoxComponent_40 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door3
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-15.42.30:854][812]LogScript: Warning: Attempted to access TRASH_BoxComponent_40 via property DoorCollision, but TRASH_BoxComponent_40 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door4
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-15.42.30:854][812]LogScript: Warning: Attempted to access TRASH_BoxComponent_40 via property DoorCollision, but TRASH_BoxComponent_40 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door4
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-15.42.30:858][812]LogScript: Warning: Attempted to access TRASH_BoxComponent_40 via property DoorCollision, but TRASH_BoxComponent_40 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door5_2
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-15.42.30:858][812]LogScript: Warning: Attempted to access TRASH_BoxComponent_40 via property DoorCollision, but TRASH_BoxComponent_40 is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door5_2
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-15.42.30:862][812]LogScript: Warning: Attempted to access DoorCollision via property DoorCollision, but DoorCollision is pending kill
+	Door_C /Game/Maps/Foldable.Foldable:PersistentLevel.Door6
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0EC1
+[2021.05.06-15.42.30:867][812]LogScript: Warning: Attempted to access TRASH_BoxComponent_52 via property DoorCollision, but TRASH_BoxComponent_52 is pending kill
+	Door_C /Engine/Transient.World_0:PersistentLevel.Door_C_0
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:0F6C
+[2021.05.06-15.42.30:867][812]LogScript: Warning: Attempted to access TRASH_BoxComponent_52 via property DoorCollision, but TRASH_BoxComponent_52 is pending kill
+	Door_C /Engine/Transient.World_0:PersistentLevel.Door_C_0
+	Function /Game/Blueprints/Door.Door_C:UserConstructionScript:104D
+[2021.05.06-15.42.33:151][927]BlueprintLog: New page: Compile Door
+[2021.05.06-15.42.33:274][927]LogUObjectHash: Compacting FUObjectHashTables data took   2.47ms
+[2021.05.06-15.42.34:928][  5]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.42.35:006][  5]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/DoorFB8A4AD440840353BEAC338D49CD6621.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.42.35:022][  5]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.42.35:022][  5]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.42.45:157][554]BlueprintLog: New page: Compile Door
+[2021.05.06-15.42.45:278][554]LogUObjectHash: Compacting FUObjectHashTables data took   2.34ms
+[2021.05.06-15.42.49:847][817]LogEditorTransaction: Undo Modify Component(s)
+[2021.05.06-15.43.04:138][688]BlueprintLog: New page: Compile Door
+[2021.05.06-15.43.04:268][688]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2021.05.06-15.43.17:663][440]LogEditorTransaction: Undo Add Component Nodes
+[2021.05.06-15.43.42:540][865]LogEditorTransaction: Undo Resize Node
+[2021.05.06-15.44.39:671][292]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.45.17:977][543]BlueprintLog: New page: Compile Door
+[2021.05.06-15.45.18:104][543]LogUObjectHash: Compacting FUObjectHashTables data took   2.28ms
+[2021.05.06-15.45.25:898][  8]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.45.38:279][704]BlueprintLog: New page: Compile Door
+[2021.05.06-15.45.38:403][704]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2021.05.06-15.45.38:894][724]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.45.38:974][724]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door6512ED8D4879A554A7A27F942549E10E.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.45.38:991][724]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.45.38:991][724]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.46.18:829][ 24]BlueprintLog: New page: Compile Door
+[2021.05.06-15.46.18:860][ 24]LogClass: Warning: Type mismatch in Door2 of Door_C - Previous (StructProperty) Current(BoolProperty) for package:  FObjectReader
+[2021.05.06-15.46.18:959][ 24]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
+[2021.05.06-15.46.41:473][453]BlueprintLog: New page: Compile Door
+[2021.05.06-15.46.41:590][453]LogUObjectHash: Compacting FUObjectHashTables data took   2.72ms
+[2021.05.06-15.47.15:923][630]LogEditorTransaction: Undo Move Nodes
+[2021.05.06-15.48.02:892][681]LogUObjectHash: Compacting FUObjectHashTables data took   2.25ms
+[2021.05.06-15.48.02:922][681]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Foldable_Auto4F4A5BDCA49CE87973967C3A68875920D.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Maps/Foldable_Auto4.umap'
+[2021.05.06-15.48.02:924][681]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/Foldable' took 0.059
+[2021.05.06-15.48.02:924][681]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.059
+[2021.05.06-15.48.02:924][681]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/Door] ([2] browsable assets)...
+[2021.05.06-15.48.02:924][681]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Door]
+[2021.05.06-15.48.02:924][681]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Blueprints/Door_Auto4.uasset" SILENT=false AUTOSAVING=true
+[2021.05.06-15.48.02:997][681]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door_Auto402C2F88943DC01257A429A98CF269F47.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Blueprints/Door_Auto4.uasset'
+[2021.05.06-15.48.02:998][681]LogFileHelpers: Auto-saving content packages took 0.074
+[2021.05.06-15.48.25:545][ 83]BlueprintLog: New page: Compile Door
+[2021.05.06-15.48.25:652][ 83]LogUObjectHash: Compacting FUObjectHashTables data took   1.96ms
+[2021.05.06-15.48.26:060][100]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.48.26:141][100]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door77DE136D420B65A57D1639B210BE5186.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.48.26:154][100]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.48.26:154][100]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.49.27:051][994]BlueprintLog: New page: Compile Door
+[2021.05.06-15.49.27:160][994]LogUObjectHash: Compacting FUObjectHashTables data took   2.27ms
+[2021.05.06-15.49.27:646][ 15]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.49.27:721][ 15]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/DoorFEF9D0F54F9FD4D21D0AE8A75CDF4DD8.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.49.27:737][ 15]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.49.27:737][ 15]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.50.15:353][122]BlueprintLog: New page: Compile Door
+[2021.05.06-15.50.15:458][122]LogUObjectHash: Compacting FUObjectHashTables data took   2.42ms
+[2021.05.06-15.50.16:277][162]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.50.16:354][162]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door1CB70EA04C9031E9AF220796B3271322.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.50.16:369][162]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.50.16:369][162]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.51.08:601][393]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.51.09:045][401]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.51.09:428][419]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.51.09:832][437]LogEditorTransaction: Undo Add Node
+[2021.05.06-15.51.10:379][465]LogEditorTransaction: Undo Move Node
+[2021.05.06-15.51.46:427][705]BlueprintLog: New page: Compile Door
+[2021.05.06-15.51.46:543][705]LogUObjectHash: Compacting FUObjectHashTables data took   2.34ms
+[2021.05.06-15.51.46:927][719]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.51.47:018][719]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door980FD9EB4A7FE31AA77A27843C89660F.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.51.47:034][719]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.51.47:034][719]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.51.52:091][200]LogTemp: Repeating last play command: VR Preview
+[2021.05.06-15.51.52:098][200]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-15.51.52:098][200]LogHMD: Initializing OVRPlugin session
+[2021.05.06-15.51.52:201][200]LogHMD: Allocating Oculus 2688 x 1600 rendertarget swapchain
+[2021.05.06-15.51.52:201][200]PIE: New page: PIE session: Foldable (06 May 2021, 19:51:52)
+[2021.05.06-15.51.52:201][200]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.51.52:209][200]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007055s)
+[2021.05.06-15.51.52:209][200]LogAIModule: Creating AISystem for world Foldable
+[2021.05.06-15.51.52:210][200]LogPlayLevel: PIE: World Init took: (0.001097s)
+[2021.05.06-15.51.52:210][200]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Foldable.Foldable to /Game/Maps/UEDPIE_0_Foldable.Foldable (0.008281s)
+[2021.05.06-15.51.52:234][200]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2021.05.06-15.51.52:235][200]LogAudio: Display: Creating Audio Device:                 Id: 11, Scope: Unique, Realtime: True
+[2021.05.06-15.51.52:235][200]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-15.51.52:235][200]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-15.51.52:235][200]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-15.51.52:235][200]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-15.51.52:235][200]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-15.51.52:235][200]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-15.51.52:235][200]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-15.51.52:235][200]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-15.51.52:236][200]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-15.51.52:236][200]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-15.51.52:238][200]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.51.52:238][200]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.51.52:239][200]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.51.52:239][200]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.51.52:239][200]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.51.52:239][200]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.51.52:241][200]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.51.52:241][200]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.51.52:253][200]LogAudioMixer: Display: Using Audio Device Headphones (Rift Audio)
+[2021.05.06-15.51.52:253][200]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-15.51.52:253][200]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-15.51.52:253][200]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-15.51.52:253][200]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-15.51.52:253][200]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-15.51.52:254][200]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.06-15.51.52:267][200]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-15.51.52:267][200]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-15.51.52:267][200]LogInit: FAudioDevice initialized.
+[2021.05.06-15.51.52:267][200]LogAudio: Display: Audio Device (ID: 11) registered with world 'Foldable'.
+[2021.05.06-15.51.52:278][200]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.51.52:342][200]LogLoad: Game class is 'VR_Mode_C'
+[2021.05.06-15.51.52:351][200]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Foldable.Foldable up for play (max tick rate 0) at 2021.05.06-17.51.52
+[2021.05.06-15.51.52:353][200]LogWorld: Bringing up level for play took: 0.009706
+[2021.05.06-15.51.52:353][200]LogOnline: OSS: Creating online subsystem instance for: :Context_22
+[2021.05.06-15.51.52:370][200]PIE: Server logged in
+[2021.05.06-15.51.52:373][200]PIE: Play in editor total start time 0,277 seconds.
+[2021.05.06-15.51.52:373][200]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.51.52:390][200]LogHMD: Allocating Oculus 2688 x 1600 depth rendertarget swapchain
+[2021.05.06-15.51.53:780][307]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.51.53:780][307]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.51.53:833][307]LogSlate: Window 'Foldable_Spaces Preview [NetMode: Standalone]  (64-bit/Windows) OculusHMD' being destroyed
+[2021.05.06-15.51.53:866][307]LogWorld: UWorld::CleanupWorld for Foldable, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-15.51.53:868][307]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.51.53:884][307]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-15.51.53:887][307]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.51.53:919][307]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.06-15.51.53:919][307]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.51.53:920][307]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.51.53:943][307]LogUObjectHash: Compacting FUObjectHashTables data took   2.41ms
+[2021.05.06-15.51.53:970][308]LogPlayLevel: Display: Destroying online subsystem :Context_22
+[2021.05.06-15.51.53:983][308]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.52.00:418][ 56]LogTemp: Repeating last play command: VR Preview
+[2021.05.06-15.52.00:423][ 56]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-15.52.00:423][ 56]LogHMD: Initializing OVRPlugin session
+[2021.05.06-15.52.00:547][ 56]LogHMD: Allocating Oculus 2688 x 1600 rendertarget swapchain
+[2021.05.06-15.52.00:547][ 56]PIE: New page: PIE session: Foldable (06 May 2021, 19:52:00)
+[2021.05.06-15.52.00:597][ 56]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.52.00:604][ 56]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007020s)
+[2021.05.06-15.52.00:605][ 56]LogAIModule: Creating AISystem for world Foldable
+[2021.05.06-15.52.00:605][ 56]LogPlayLevel: PIE: World Init took: (0.001128s)
+[2021.05.06-15.52.00:605][ 56]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Foldable.Foldable to /Game/Maps/UEDPIE_0_Foldable.Foldable (0.008291s)
+[2021.05.06-15.52.00:627][ 56]LogUObjectHash: Compacting FUObjectHashTables data took   1.52ms
+[2021.05.06-15.52.00:629][ 56]LogAudio: Display: Creating Audio Device:                 Id: 12, Scope: Unique, Realtime: True
+[2021.05.06-15.52.00:629][ 56]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-15.52.00:629][ 56]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-15.52.00:629][ 56]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-15.52.00:629][ 56]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-15.52.00:629][ 56]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-15.52.00:629][ 56]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-15.52.00:629][ 56]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-15.52.00:629][ 56]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-15.52.00:629][ 56]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-15.52.00:629][ 56]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-15.52.00:631][ 56]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.52.00:631][ 56]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.52.00:632][ 56]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.52.00:632][ 56]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.52.00:633][ 56]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.52.00:633][ 56]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.52.00:634][ 56]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.52.00:634][ 56]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.52.00:642][ 56]LogAudioMixer: Display: Using Audio Device Headphones (Rift Audio)
+[2021.05.06-15.52.00:642][ 56]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-15.52.00:642][ 56]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-15.52.00:643][ 56]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-15.52.00:643][ 56]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-15.52.00:643][ 56]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-15.52.00:643][ 56]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.06-15.52.00:657][ 56]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-15.52.00:657][ 56]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-15.52.00:657][ 56]LogInit: FAudioDevice initialized.
+[2021.05.06-15.52.00:657][ 56]LogAudio: Display: Audio Device (ID: 12) registered with world 'Foldable'.
+[2021.05.06-15.52.00:667][ 56]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.52.00:708][ 56]LogLoad: Game class is 'VR_Mode_C'
+[2021.05.06-15.52.00:717][ 56]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Foldable.Foldable up for play (max tick rate 0) at 2021.05.06-17.52.00
+[2021.05.06-15.52.00:719][ 56]LogWorld: Bringing up level for play took: 0.009890
+[2021.05.06-15.52.00:719][ 56]LogOnline: OSS: Creating online subsystem instance for: :Context_23
+[2021.05.06-15.52.00:732][ 56]PIE: Server logged in
+[2021.05.06-15.52.00:734][ 56]PIE: Play in editor total start time 0,312 seconds.
+[2021.05.06-15.52.00:734][ 56]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.52.00:742][ 56]LogHMD: Allocating Oculus 2688 x 1600 depth rendertarget swapchain
+[2021.05.06-15.53.09:829][330]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.53.09:829][330]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.53.09:886][330]LogSlate: Window 'Foldable_Spaces Preview [NetMode: Standalone]  (64-bit/Windows) OculusHMD' being destroyed
+[2021.05.06-15.53.09:924][330]LogWorld: UWorld::CleanupWorld for Foldable, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-15.53.09:925][330]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.53.09:936][330]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-15.53.09:940][330]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.53.09:974][330]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.53.09:975][330]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.53.10:007][330]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2021.05.06-15.53.10:040][331]LogPlayLevel: Display: Destroying online subsystem :Context_23
+[2021.05.06-15.53.10:054][331]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.55.02:012][548]LogEditorTransaction: Undo Create Pin Link
+[2021.05.06-15.55.16:160][331]BlueprintLog: New page: Compile Door
+[2021.05.06-15.55.16:286][331]LogUObjectHash: Compacting FUObjectHashTables data took   2.87ms
+[2021.05.06-15.56.13:041][658]LogEditorTransaction: Undo Change Number Pin Value
+[2021.05.06-15.56.13:652][672]LogEditorTransaction: Undo Add Pin
+[2021.05.06-15.57.36:632][472]BlueprintLog: New page: Compile Door
+[2021.05.06-15.57.36:756][472]LogUObjectHash: Compacting FUObjectHashTables data took   2.25ms
+[2021.05.06-15.58.09:407][471]BlueprintLog: New page: Compile Door
+[2021.05.06-15.58.09:520][471]LogUObjectHash: Compacting FUObjectHashTables data took   2.22ms
+[2021.05.06-15.58.09:925][487]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.58.10:006][487]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door06B3E0E84FD7B51FA6DF36BBCEAD8674.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.58.10:020][487]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.58.10:020][487]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-15.58.12:580][676]LogTemp: Repeating last play command: VR Preview
+[2021.05.06-15.58.12:588][676]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-15.58.12:588][676]LogHMD: Initializing OVRPlugin session
+[2021.05.06-15.58.12:699][676]LogHMD: Allocating Oculus 2688 x 1600 rendertarget swapchain
+[2021.05.06-15.58.12:699][676]PIE: New page: PIE session: Foldable (06 May 2021, 19:58:12)
+[2021.05.06-15.58.12:699][676]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.58.12:708][676]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008870s)
+[2021.05.06-15.58.12:709][676]LogAIModule: Creating AISystem for world Foldable
+[2021.05.06-15.58.12:709][676]LogPlayLevel: PIE: World Init took: (0.001069s)
+[2021.05.06-15.58.12:709][676]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Foldable.Foldable to /Game/Maps/UEDPIE_0_Foldable.Foldable (0.010069s)
+[2021.05.06-15.58.12:735][676]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2021.05.06-15.58.12:737][676]LogAudio: Display: Creating Audio Device:                 Id: 13, Scope: Unique, Realtime: True
+[2021.05.06-15.58.12:737][676]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-15.58.12:737][676]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-15.58.12:737][676]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-15.58.12:737][676]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-15.58.12:737][676]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-15.58.12:737][676]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-15.58.12:737][676]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-15.58.12:737][676]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-15.58.12:737][676]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-15.58.12:737][676]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-15.58.12:739][676]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.58.12:739][676]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.58.12:740][676]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.58.12:740][676]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.58.12:740][676]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.58.12:740][676]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.58.12:741][676]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.58.12:741][676]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.58.12:753][676]LogAudioMixer: Display: Using Audio Device Headphones (Rift Audio)
+[2021.05.06-15.58.12:753][676]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-15.58.12:753][676]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-15.58.12:753][676]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-15.58.12:754][676]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-15.58.12:754][676]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-15.58.12:754][676]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.06-15.58.12:767][676]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-15.58.12:767][676]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-15.58.12:767][676]LogInit: FAudioDevice initialized.
+[2021.05.06-15.58.12:767][676]LogAudio: Display: Audio Device (ID: 13) registered with world 'Foldable'.
+[2021.05.06-15.58.12:778][676]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.58.12:826][676]LogLoad: Game class is 'VR_Mode_C'
+[2021.05.06-15.58.12:831][676]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Foldable.Foldable up for play (max tick rate 0) at 2021.05.06-17.58.12
+[2021.05.06-15.58.12:832][676]LogWorld: Bringing up level for play took: 0.005700
+[2021.05.06-15.58.12:832][676]LogOnline: OSS: Creating online subsystem instance for: :Context_24
+[2021.05.06-15.58.12:873][676]PIE: Server logged in
+[2021.05.06-15.58.12:887][676]PIE: Play in editor total start time 0,3 seconds.
+[2021.05.06-15.58.12:887][676]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.58.12:912][676]LogHMD: Allocating Oculus 2688 x 1600 depth rendertarget swapchain
+[2021.05.06-15.58.26:108][821]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.58.26:108][821]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.58.26:173][821]LogSlate: Window 'Foldable_Spaces Preview [NetMode: Standalone]  (64-bit/Windows) OculusHMD' being destroyed
+[2021.05.06-15.58.26:232][821]LogWorld: UWorld::CleanupWorld for Foldable, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-15.58.26:234][821]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.58.26:258][821]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-15.58.26:268][821]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.58.26:305][821]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.06-15.58.26:306][821]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.58.26:307][821]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.58.26:344][821]LogUObjectHash: Compacting FUObjectHashTables data took   3.23ms
+[2021.05.06-15.58.26:380][822]LogPlayLevel: Display: Destroying online subsystem :Context_24
+[2021.05.06-15.58.26:390][822]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.58.33:351][519]LogTemp: Repeating last play command: VR Preview
+[2021.05.06-15.58.33:358][519]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-15.58.33:358][519]LogHMD: Initializing OVRPlugin session
+[2021.05.06-15.58.33:484][519]LogHMD: Allocating Oculus 2688 x 1600 rendertarget swapchain
+[2021.05.06-15.58.33:484][519]PIE: New page: PIE session: Foldable (06 May 2021, 19:58:33)
+[2021.05.06-15.58.33:484][519]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.58.33:494][519]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009575s)
+[2021.05.06-15.58.33:495][519]LogAIModule: Creating AISystem for world Foldable
+[2021.05.06-15.58.33:495][519]LogPlayLevel: PIE: World Init took: (0.001301s)
+[2021.05.06-15.58.33:495][519]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Foldable.Foldable to /Game/Maps/UEDPIE_0_Foldable.Foldable (0.011041s)
+[2021.05.06-15.58.33:524][519]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2021.05.06-15.58.33:526][519]LogAudio: Display: Creating Audio Device:                 Id: 14, Scope: Unique, Realtime: True
+[2021.05.06-15.58.33:526][519]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-15.58.33:526][519]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-15.58.33:526][519]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-15.58.33:526][519]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-15.58.33:526][519]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-15.58.33:526][519]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-15.58.33:526][519]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-15.58.33:526][519]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-15.58.33:527][519]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-15.58.33:527][519]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-15.58.33:529][519]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.58.33:529][519]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.58.33:531][519]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.58.33:531][519]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.58.33:532][519]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.58.33:532][519]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.58.33:533][519]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-15.58.33:533][519]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-15.58.33:545][519]LogAudioMixer: Display: Using Audio Device Headphones (Rift Audio)
+[2021.05.06-15.58.33:545][519]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-15.58.33:545][519]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-15.58.33:545][519]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-15.58.33:545][519]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-15.58.33:546][519]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-15.58.33:546][519]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.06-15.58.33:564][519]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-15.58.33:564][519]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-15.58.33:564][519]LogInit: FAudioDevice initialized.
+[2021.05.06-15.58.33:564][519]LogAudio: Display: Audio Device (ID: 14) registered with world 'Foldable'.
+[2021.05.06-15.58.33:576][519]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.58.33:639][519]LogLoad: Game class is 'VR_Mode_C'
+[2021.05.06-15.58.33:652][519]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Foldable.Foldable up for play (max tick rate 0) at 2021.05.06-17.58.33
+[2021.05.06-15.58.33:654][519]LogWorld: Bringing up level for play took: 0.014645
+[2021.05.06-15.58.33:654][519]LogOnline: OSS: Creating online subsystem instance for: :Context_25
+[2021.05.06-15.58.33:680][519]PIE: Server logged in
+[2021.05.06-15.58.33:684][519]PIE: Play in editor total start time 0,327 seconds.
+[2021.05.06-15.58.33:684][519]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.58.33:702][519]LogHMD: Allocating Oculus 2688 x 1600 depth rendertarget swapchain
+[2021.05.06-15.59.34:495][947]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-15.59.34:495][947]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-15.59.34:553][947]LogSlate: Window 'Foldable_Spaces Preview [NetMode: Standalone]  (64-bit/Windows) OculusHMD' being destroyed
+[2021.05.06-15.59.34:582][947]LogWorld: UWorld::CleanupWorld for Foldable, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-15.59.34:585][947]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.59.34:614][947]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-15.59.34:620][947]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-15.59.34:667][947]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.59.34:668][947]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-15.59.34:709][947]LogUObjectHash: Compacting FUObjectHashTables data took   4.04ms
+[2021.05.06-15.59.34:741][948]LogPlayLevel: Display: Destroying online subsystem :Context_25
+[2021.05.06-15.59.34:751][948]LogEngine: Changing dynamic resolution state.
+[2021.05.06-15.59.35:228][983]Cmd: SELECT NONE
+[2021.05.06-15.59.51:801][807]BlueprintLog: New page: Compile Door
+[2021.05.06-15.59.51:941][807]LogUObjectHash: Compacting FUObjectHashTables data took   2.77ms
+[2021.05.06-15.59.52:461][826]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/Door" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset" SILENT=true
+[2021.05.06-15.59.52:574][826]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Door9E36EC1146C151B924765FAB7CD149BC.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/Door.uasset'
+[2021.05.06-15.59.52:589][826]AssetCheck: New page: Asset Save: Door
+[2021.05.06-15.59.52:589][826]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/Door.Door
+[2021.05.06-16.00.02:806][383]LogTemp: Repeating last play command: VR Preview
+[2021.05.06-16.00.02:819][383]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.05.06-16.00.02:819][383]LogHMD: Initializing OVRPlugin session
+[2021.05.06-16.00.02:945][383]LogHMD: Allocating Oculus 2688 x 1600 rendertarget swapchain
+[2021.05.06-16.00.02:946][383]PIE: New page: PIE session: Foldable (06 May 2021, 20:00:02)
+[2021.05.06-16.00.02:946][383]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-16.00.02:956][383]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010530s)
+[2021.05.06-16.00.02:958][383]LogAIModule: Creating AISystem for world Foldable
+[2021.05.06-16.00.02:958][383]LogPlayLevel: PIE: World Init took: (0.001607s)
+[2021.05.06-16.00.02:958][383]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Foldable.Foldable to /Game/Maps/UEDPIE_0_Foldable.Foldable (0.012291s)
+[2021.05.06-16.00.02:988][383]LogUObjectHash: Compacting FUObjectHashTables data took   3.46ms
+[2021.05.06-16.00.02:990][383]LogAudio: Display: Creating Audio Device:                 Id: 15, Scope: Unique, Realtime: True
+[2021.05.06-16.00.02:990][383]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.05.06-16.00.02:990][383]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.05.06-16.00.02:990][383]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.05.06-16.00.02:990][383]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.05.06-16.00.02:990][383]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.05.06-16.00.02:990][383]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.05.06-16.00.02:990][383]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.05.06-16.00.02:990][383]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.05.06-16.00.02:991][383]LogAudio: Display: Using built-in audio occlusion.
+[2021.05.06-16.00.02:991][383]LogAudioMixer: Display: Initializing audio mixer.
+[2021.05.06-16.00.02:993][383]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-16.00.02:993][383]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-16.00.02:994][383]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-16.00.02:994][383]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-16.00.02:995][383]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-16.00.02:995][383]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-16.00.02:997][383]LogAudioMixer: Display: 0: FrontLeft
+[2021.05.06-16.00.02:997][383]LogAudioMixer: Display: 1: FrontRight
+[2021.05.06-16.00.03:014][383]LogAudioMixer: Display: Using Audio Device Headphones (Rift Audio)
+[2021.05.06-16.00.03:014][383]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.05.06-16.00.03:014][383]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.05.06-16.00.03:014][383]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.05.06-16.00.03:014][383]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.05.06-16.00.03:014][383]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.05.06-16.00.03:014][383]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.05.06-16.00.03:033][383]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.05.06-16.00.03:033][383]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.05.06-16.00.03:033][383]LogInit: FAudioDevice initialized.
+[2021.05.06-16.00.03:033][383]LogAudio: Display: Audio Device (ID: 15) registered with world 'Foldable'.
+[2021.05.06-16.00.03:046][383]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-16.00.03:092][383]LogLoad: Game class is 'VR_Mode_C'
+[2021.05.06-16.00.03:108][383]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Foldable.Foldable up for play (max tick rate 0) at 2021.05.06-18.00.03
+[2021.05.06-16.00.03:110][383]LogWorld: Bringing up level for play took: 0.017342
+[2021.05.06-16.00.03:111][383]LogOnline: OSS: Creating online subsystem instance for: :Context_26
+[2021.05.06-16.00.03:155][383]PIE: Server logged in
+[2021.05.06-16.00.03:161][383]PIE: Play in editor total start time 0,346 seconds.
+[2021.05.06-16.00.03:163][383]LogEngine: Changing dynamic resolution state.
+[2021.05.06-16.00.03:217][383]LogHMD: Allocating Oculus 2688 x 1600 depth rendertarget swapchain
+[2021.05.06-16.00.48:797][426]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.05.06-16.00.48:797][426]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_Foldable
+[2021.05.06-16.00.48:933][426]LogSlate: Window 'Foldable_Spaces Preview [NetMode: Standalone]  (64-bit/Windows) OculusHMD' being destroyed
+[2021.05.06-16.00.48:970][426]LogWorld: UWorld::CleanupWorld for Foldable, bSessionEnded=true, bCleanupResources=true
+[2021.05.06-16.00.48:971][426]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-16.00.48:999][426]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.05.06-16.00.49:003][426]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.05.06-16.00.49:034][426]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.05.06-16.00.49:034][426]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-16.00.49:035][426]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.05.06-16.00.49:066][426]LogUObjectHash: Compacting FUObjectHashTables data took   2.07ms
+[2021.05.06-16.00.49:139][427]Cmd: SELECT NONE
+[2021.05.06-16.00.49:144][427]LogPlayLevel: Display: Destroying online subsystem :Context_26
+[2021.05.06-16.00.49:150][427]LogEngine: Changing dynamic resolution state.
+[2021.05.06-16.00.49:197][429]Cmd: SELECT NONE
