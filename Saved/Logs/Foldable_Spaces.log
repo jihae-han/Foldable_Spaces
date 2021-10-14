@@ -10102,3 +10102,1125 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.10.14-21.50.28:904][612]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/3HoriTest_Auto33FB09E6D47DA9134906DEEA771DEA478.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Maps/3HoriTest_Auto3.umap'
 [2021.10.14-21.50.28:906][612]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/3HoriTest' took 0.099
 [2021.10.14-21.50.28:906][612]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.099
+[2021.10.14-21.56.33:815][618]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-21.56.33:985][618]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchorE46B57224251ED5D6989FAA555B2010E.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-21.56.34:005][618]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-21.56.34:005][618]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.01.54:305][781]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.01.54:314][781]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.10.14-22.01.54:314][781]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:01:54)
+[2021.10.14-22.01.54:314][781]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.01.54:337][781]LogPlayLevel: PIE: StaticDuplicateObject took: (0.022469s)
+[2021.10.14-22.01.54:338][781]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.01.54:338][781]LogPlayLevel: PIE: World Init took: (0.001226s)
+[2021.10.14-22.01.54:338][781]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.023855s)
+[2021.10.14-22.01.54:361][781]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2021.10.14-22.01.54:364][781]LogAudio: Display: Creating Audio Device:                 Id: 68, Scope: Unique, Realtime: True
+[2021.10.14-22.01.54:364][781]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.01.54:364][781]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.01.54:364][781]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.01.54:364][781]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.01.54:364][781]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.01.54:364][781]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.01.54:364][781]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.01.54:364][781]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.01.54:365][781]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.01.54:365][781]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.01.54:368][781]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.01.54:368][781]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.01.54:531][781]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.01.54:531][781]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.01.54:531][781]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.01.54:531][781]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.01.54:532][781]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.01.54:532][781]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.01.54:532][781]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.01.54:545][781]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.01.54:545][781]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.01.54:545][781]LogInit: FAudioDevice initialized.
+[2021.10.14-22.01.54:545][781]LogAudio: Display: Audio Device (ID: 68) registered with world '3HoriTest'.
+[2021.10.14-22.01.54:552][781]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.01.54:554][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.01.54:554][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:554][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.01.54:554][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:555][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.01.54:555][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:555][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.01.54:555][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:556][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.01.54:556][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:556][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.01.54:556][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:557][781]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.01.54
+[2021.10.14-22.01.54:557][781]LogWorld: Bringing up level for play took: 0.003312
+[2021.10.14-22.01.54:557][781]LogOnline: OSS: Creating online subsystem instance for: :Context_72
+[2021.10.14-22.01.54:562][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.01.54:562][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.01.54:564][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:564][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:569][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.01.54:569][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.01.54:570][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:570][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:574][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.01.54:574][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.01.54:575][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:575][781]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.54:578][781]PIE: Server logged in
+[2021.10.14-22.01.54:579][781]PIE: Play in editor total start time 0,268 seconds.
+[2021.10.14-22.01.56:207][911]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.01.56:208][911]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.01.56:208][911]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.01.56:210][911]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.56:210][911]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.57:220][995]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.01.57:220][995]LogBlueprintUserMessages: [HorizAnchor_2] 1
+[2021.10.14-22.01.59:378][187]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.01.59:379][187]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.ProceduralMesh' 
+[2021.10.14-22.01.59:379][187]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.ProceduralMesh' 
+[2021.10.14-22.01.59:381][187]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.01.59:381][187]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.02.00:568][296]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.02.00:568][296]LogBlueprintUserMessages: [HorizAnchor_2] 2
+[2021.10.14-22.02.02:241][450]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.02.02:242][450]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_10.ProceduralMesh' 
+[2021.10.14-22.02.02:242][450]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_10.ProceduralMesh' 
+[2021.10.14-22.02.02:244][450]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_10.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.02.02:245][450]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_10.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.02.03:911][602]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.02.03:912][602]LogBlueprintUserMessages: [HorizAnchor_2] 3
+[2021.10.14-22.02.06:366][819]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.02.06:367][819]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.ProceduralMesh' 
+[2021.10.14-22.02.06:369][819]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.ProceduralMesh' 
+[2021.10.14-22.02.06:370][819]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.02.06:370][819]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.02.07:506][916]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.02.07:507][916]LogBlueprintUserMessages: [HorizAnchor_2] 4
+[2021.10.14-22.02.09:315][ 66]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.02.09:315][ 66]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.02.09:315][ 66]LogBlueprintUserMessages: [DataActor_2] 001,14.967164,0.0,0
+[2021.10.14-22.02.09:315][ 66]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.02.09:316][ 66]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.02.09:344][ 66]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.02.09:347][ 66]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.02.09:367][ 66]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.02.09:368][ 66]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.02.09:369][ 66]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.02.09:389][ 66]LogUObjectHash: Compacting FUObjectHashTables data took   2.02ms
+[2021.10.14-22.02.09:415][ 67]LogPlayLevel: Display: Destroying online subsystem :Context_72
+[2021.10.14-22.02.10:059][130]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/3HoriTest" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.10.14-22.02.10:081][130]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2021.10.14-22.02.10:169][130]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/3HoriTest81185F704F2EDA8ADE5A85A2004CF5CB.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest.umap'
+[2021.10.14-22.02.10:180][130]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/3HoriTest_BuiltData" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest_BuiltData.uasset" SILENT=true
+[2021.10.14-22.02.10:186][130]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/3HoriTest_BuiltData54E4DF674E25C8D04815B490F82201AF.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest_BuiltData.uasset'
+[2021.10.14-22.02.10:203][130]AssetCheck: New page: Asset Save: multiple assets
+[2021.10.14-22.02.10:203][130]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/3HoriTest_BuiltData.3HoriTest_BuiltData
+[2021.10.14-22.02.10:203][130]LogContentValidation: Display: Validating World /Game/Maps/3HoriTest.3HoriTest
+[2021.10.14-22.03.28:006][376]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-22.03.28:207][376]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchor92942FC84721C92B694168A5179A377E.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-22.03.28:221][376]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-22.03.28:221][376]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.04.33:630][544]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.04.33:722][544]LogClass: Warning: Type mismatch in DirectionalTruth of HoriAnchor_C - Previous (StructProperty) Current(BoolProperty) for package:  FObjectReader
+[2021.10.14-22.04.33:777][544]LogUObjectHash: Compacting FUObjectHashTables data took   2.79ms
+[2021.10.14-22.04.41:061][972]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.04.41:202][972]LogUObjectHash: Compacting FUObjectHashTables data took   2.66ms
+[2021.10.14-22.05.41:731][439]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.05.41:873][439]LogUObjectHash: Compacting FUObjectHashTables data took   2.73ms
+[2021.10.14-22.06.05:929][723]LogEditorTransaction: Undo Move Node
+[2021.10.14-22.06.06:208][728]LogEditorTransaction: Undo Create Pin Link
+[2021.10.14-22.06.06:675][745]LogEditorTransaction: Undo Add Node
+[2021.10.14-22.06.34:238][233]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.06.34:384][233]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2021.10.14-22.06.34:874][254]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-22.06.35:077][254]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchorC81560AE4CE3D432298FD79F564BA86D.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-22.06.35:090][254]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-22.06.35:091][254]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.06.40:134][545]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.06.40:145][545]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.10.14-22.06.40:145][545]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:06:40)
+[2021.10.14-22.06.40:183][545]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.06.40:199][545]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016869s)
+[2021.10.14-22.06.40:200][545]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.06.40:201][545]LogPlayLevel: PIE: World Init took: (0.001204s)
+[2021.10.14-22.06.40:201][545]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.018244s)
+[2021.10.14-22.06.40:223][545]LogUObjectHash: Compacting FUObjectHashTables data took   2.55ms
+[2021.10.14-22.06.40:224][545]LogAudio: Display: Creating Audio Device:                 Id: 69, Scope: Unique, Realtime: True
+[2021.10.14-22.06.40:224][545]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.06.40:224][545]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.06.40:224][545]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.06.40:225][545]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.06.40:225][545]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.06.40:225][545]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.06.40:225][545]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.06.40:225][545]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.06.40:225][545]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.06.40:225][545]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.06.40:229][545]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.06.40:229][545]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.06.40:390][545]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.06.40:390][545]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.06.40:390][545]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.06.40:390][545]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.06.40:390][545]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.06.40:390][545]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.06.40:390][545]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.06.40:405][545]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.06.40:405][545]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.06.40:405][545]LogInit: FAudioDevice initialized.
+[2021.10.14-22.06.40:405][545]LogAudio: Display: Audio Device (ID: 69) registered with world '3HoriTest'.
+[2021.10.14-22.06.40:416][545]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.06.40:417][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.06.40:417][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:417][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.06.40:417][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:418][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.06.40:418][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:418][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.06.40:418][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:418][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.06.40:419][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:419][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.06.40:419][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:419][545]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.06.40
+[2021.10.14-22.06.40:420][545]LogWorld: Bringing up level for play took: 0.003187
+[2021.10.14-22.06.40:420][545]LogOnline: OSS: Creating online subsystem instance for: :Context_73
+[2021.10.14-22.06.40:425][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.06.40:425][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.06.40:427][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:427][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:432][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.06.40:432][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.06.40:433][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:433][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:437][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.06.40:437][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.06.40:438][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:438][545]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.40:441][545]PIE: Server logged in
+[2021.10.14-22.06.40:441][545]PIE: Play in editor total start time 0,299 seconds.
+[2021.10.14-22.06.42:474][708]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.06.43:490][790]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.06.43:490][790]LogBlueprintUserMessages: [HorizAnchor_2] 1
+[2021.10.14-22.06.45:934][983]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.06.45:934][983]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.06.45:934][983]LogBlueprintUserMessages: [DataActor_2] 001,5.772173,0.0,0
+[2021.10.14-22.06.45:935][983]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.06.45:935][983]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.06.45:961][983]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.06.45:965][983]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.06.45:985][983]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.10.14-22.06.45:985][983]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.06.45:986][983]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.06.46:003][983]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.06.46:007][983]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2021.10.14-22.06.46:031][984]LogPlayLevel: Display: Destroying online subsystem :Context_73
+[2021.10.14-22.06.47:679][154]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.06.47:688][154]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.10.14-22.06.47:688][154]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:06:47)
+[2021.10.14-22.06.47:713][154]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.06.47:731][154]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017892s)
+[2021.10.14-22.06.47:732][154]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.06.47:732][154]LogPlayLevel: PIE: World Init took: (0.001190s)
+[2021.10.14-22.06.47:732][154]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.019259s)
+[2021.10.14-22.06.47:754][154]LogUObjectHash: Compacting FUObjectHashTables data took   2.10ms
+[2021.10.14-22.06.47:755][154]LogAudio: Display: Creating Audio Device:                 Id: 70, Scope: Unique, Realtime: True
+[2021.10.14-22.06.47:755][154]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.06.47:755][154]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.06.47:755][154]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.06.47:755][154]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.06.47:755][154]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.06.47:755][154]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.06.47:755][154]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.06.47:755][154]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.06.47:755][154]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.06.47:755][154]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.06.47:759][154]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.06.47:759][154]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.06.47:924][154]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.06.47:924][154]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.06.47:924][154]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.06.47:924][154]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.06.47:924][154]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.06.47:924][154]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.06.47:924][154]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.06.47:939][154]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.06.47:939][154]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.06.47:939][154]LogInit: FAudioDevice initialized.
+[2021.10.14-22.06.47:939][154]LogAudio: Display: Audio Device (ID: 70) registered with world '3HoriTest'.
+[2021.10.14-22.06.47:944][154]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.06.47:945][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.06.47:945][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:946][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.06.47:946][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:946][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.06.47:946][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:946][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.06.47:947][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:947][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.06.47:947][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:947][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.06.47:947][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:948][154]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.06.47
+[2021.10.14-22.06.47:948][154]LogWorld: Bringing up level for play took: 0.003292
+[2021.10.14-22.06.47:948][154]LogOnline: OSS: Creating online subsystem instance for: :Context_74
+[2021.10.14-22.06.47:953][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.06.47:953][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.06.47:955][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:955][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:960][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.06.47:960][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.06.47:961][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:962][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:965][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.06.47:966][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.06.47:967][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:967][154]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.06.47:969][154]PIE: Server logged in
+[2021.10.14-22.06.47:970][154]PIE: Play in editor total start time 0,282 seconds.
+[2021.10.14-22.06.49:306][267]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.06.52:014][499]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.06.52:014][499]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.06.52:014][499]LogBlueprintUserMessages: [DataActor_2] 001,4.320154,0.0,0
+[2021.10.14-22.06.52:016][499]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.06.52:017][499]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.06.52:028][499]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.06.52:033][499]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.06.52:052][499]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.06.52:053][499]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.06.52:054][499]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.06.52:076][499]LogUObjectHash: Compacting FUObjectHashTables data took   1.86ms
+[2021.10.14-22.06.52:097][500]LogPlayLevel: Display: Destroying online subsystem :Context_74
+[2021.10.14-22.07.59:501][121]LogSlate: Window 'Color Picker' being destroyed
+[2021.10.14-22.08.26:013][782]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.08.26:024][782]BlueprintLog: New page: Pre-Play auto-recompile
+[2021.10.14-22.08.26:027][782]LogPlayLevel: [PlayLevel] Compiling HoriAnchor before play...
+[2021.10.14-22.08.26:198][782]LogUObjectHash: Compacting FUObjectHashTables data took   2.44ms
+[2021.10.14-22.08.26:200][782]LogPlayLevel: PlayLevel: Blueprint regeneration took 176 ms (1 blueprints)
+[2021.10.14-22.08.26:200][782]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:08:26)
+[2021.10.14-22.08.26:233][782]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.08.26:250][782]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016468s)
+[2021.10.14-22.08.26:250][782]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.08.26:251][782]LogPlayLevel: PIE: World Init took: (0.001081s)
+[2021.10.14-22.08.26:251][782]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.017759s)
+[2021.10.14-22.08.26:271][782]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2021.10.14-22.08.26:271][782]LogAudio: Display: Creating Audio Device:                 Id: 71, Scope: Unique, Realtime: True
+[2021.10.14-22.08.26:272][782]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.08.26:272][782]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.08.26:272][782]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.08.26:272][782]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.08.26:272][782]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.08.26:272][782]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.08.26:272][782]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.08.26:272][782]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.08.26:272][782]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.08.26:272][782]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.08.26:276][782]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.08.26:276][782]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.08.26:442][782]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.08.26:443][782]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.08.26:443][782]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.08.26:443][782]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.08.26:443][782]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.08.26:443][782]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.08.26:443][782]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.08.26:457][782]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.08.26:457][782]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.08.26:457][782]LogInit: FAudioDevice initialized.
+[2021.10.14-22.08.26:457][782]LogAudio: Display: Audio Device (ID: 71) registered with world '3HoriTest'.
+[2021.10.14-22.08.26:464][782]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.08.26:465][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.08.26:465][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:465][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.08.26:465][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:466][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.08.26:466][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:466][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.08.26:466][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:466][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.08.26:467][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:467][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.08.26:467][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:467][782]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.08.26
+[2021.10.14-22.08.26:468][782]LogWorld: Bringing up level for play took: 0.003068
+[2021.10.14-22.08.26:468][782]LogOnline: OSS: Creating online subsystem instance for: :Context_75
+[2021.10.14-22.08.26:472][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.08.26:472][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.08.26:474][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:474][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:479][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.08.26:479][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.08.26:480][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:480][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:484][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.08.26:484][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.08.26:485][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:486][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.26:488][782]PIE: Server logged in
+[2021.10.14-22.08.26:489][782]PIE: Play in editor total start time 0,468 seconds.
+[2021.10.14-22.08.28:119][919]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.08.28:119][919]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 294.094818
+[2021.10.14-22.08.28:119][919]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 294.094818
+[2021.10.14-22.08.32:664][305]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.08.32:664][305]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.08.32:664][305]LogBlueprintUserMessages: [DataActor_2] 001,6.623745,0.0,0
+[2021.10.14-22.08.32:665][305]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.08.32:665][305]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.08.32:674][305]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.08.32:679][305]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.08.32:699][305]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.08.32:700][305]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.08.32:701][305]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.08.32:723][305]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2021.10.14-22.08.32:745][306]LogPlayLevel: Display: Destroying online subsystem :Context_75
+[2021.10.14-22.08.55:564][588]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.08.55:575][588]BlueprintLog: New page: Pre-Play auto-recompile
+[2021.10.14-22.08.55:578][588]LogPlayLevel: [PlayLevel] Compiling HoriAnchor before play...
+[2021.10.14-22.08.55:746][588]LogUObjectHash: Compacting FUObjectHashTables data took   2.31ms
+[2021.10.14-22.08.55:747][588]LogPlayLevel: PlayLevel: Blueprint regeneration took 172 ms (1 blueprints)
+[2021.10.14-22.08.55:747][588]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:08:55)
+[2021.10.14-22.08.55:783][588]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.08.55:799][588]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016353s)
+[2021.10.14-22.08.55:800][588]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.08.55:801][588]LogPlayLevel: PIE: World Init took: (0.001070s)
+[2021.10.14-22.08.55:801][588]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.017615s)
+[2021.10.14-22.08.55:821][588]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2021.10.14-22.08.55:821][588]LogAudio: Display: Creating Audio Device:                 Id: 72, Scope: Unique, Realtime: True
+[2021.10.14-22.08.55:821][588]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.08.55:821][588]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.08.55:821][588]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.08.55:821][588]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.08.55:821][588]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.08.55:821][588]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.08.55:821][588]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.08.55:821][588]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.08.55:822][588]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.08.55:822][588]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.08.55:825][588]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.08.55:825][588]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.08.55:984][588]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.08.55:984][588]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.08.55:984][588]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.08.55:984][588]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.08.55:985][588]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.08.55:985][588]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.08.55:985][588]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.08.55:998][588]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.08.55:998][588]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.08.55:998][588]LogInit: FAudioDevice initialized.
+[2021.10.14-22.08.55:998][588]LogAudio: Display: Audio Device (ID: 72) registered with world '3HoriTest'.
+[2021.10.14-22.08.56:003][588]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.08.56:004][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.08.56:004][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:004][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.08.56:004][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:005][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.08.56:005][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:005][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.08.56:005][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:006][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.08.56:006][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:006][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.08.56:006][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:007][588]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.08.56
+[2021.10.14-22.08.56:007][588]LogWorld: Bringing up level for play took: 0.003831
+[2021.10.14-22.08.56:007][588]LogOnline: OSS: Creating online subsystem instance for: :Context_76
+[2021.10.14-22.08.56:012][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.08.56:012][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.08.56:014][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:014][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:019][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.08.56:019][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.08.56:020][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:020][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:024][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.08.56:024][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.08.56:025][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:025][588]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.08.56:028][588]PIE: Server logged in
+[2021.10.14-22.08.56:028][588]PIE: Play in editor total start time 0,456 seconds.
+[2021.10.14-22.08.57:407][698]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.08.57:407][698]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 294.094818
+[2021.10.14-22.08.57:407][698]LogBlueprintUserMessages: [HorizAnchor_2] false
+[2021.10.14-22.08.57:408][698]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 294.094818
+[2021.10.14-22.08.57:408][698]LogBlueprintUserMessages: [HorizAnchor_2] false
+[2021.10.14-22.09.11:384][837]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.09.11:384][837]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.09.11:384][837]LogBlueprintUserMessages: [DataActor_2] 001,15.790523,0.0,0
+[2021.10.14-22.09.11:385][837]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.09.11:386][837]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.09.11:401][837]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.09.11:405][837]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.09.11:426][837]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.09.11:426][837]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.09.11:427][837]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.09.11:449][837]LogUObjectHash: Compacting FUObjectHashTables data took   2.18ms
+[2021.10.14-22.09.11:472][838]LogPlayLevel: Display: Destroying online subsystem :Context_76
+[2021.10.14-22.09.13:356][ 38]Cmd: SELECT NONE
+[2021.10.14-22.09.13:523][ 56]Cmd: SELECT NONE
+[2021.10.14-22.09.40:430][643]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.09.40:578][643]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2021.10.14-22.09.42:442][793]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.09.42:454][793]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.10.14-22.09.42:454][793]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:09:42)
+[2021.10.14-22.09.42:503][793]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.09.42:520][793]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017048s)
+[2021.10.14-22.09.42:521][793]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.09.42:521][793]LogPlayLevel: PIE: World Init took: (0.001188s)
+[2021.10.14-22.09.42:521][793]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.018409s)
+[2021.10.14-22.09.42:544][793]LogUObjectHash: Compacting FUObjectHashTables data took   2.87ms
+[2021.10.14-22.09.42:545][793]LogAudio: Display: Creating Audio Device:                 Id: 73, Scope: Unique, Realtime: True
+[2021.10.14-22.09.42:545][793]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.09.42:545][793]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.09.42:545][793]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.09.42:545][793]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.09.42:545][793]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.09.42:545][793]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.09.42:545][793]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.09.42:545][793]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.09.42:545][793]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.09.42:545][793]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.09.42:549][793]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.09.42:549][793]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.09.42:704][793]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.09.42:705][793]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.09.42:705][793]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.09.42:705][793]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.09.42:705][793]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.09.42:705][793]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.09.42:705][793]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.09.42:719][793]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.09.42:719][793]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.09.42:719][793]LogInit: FAudioDevice initialized.
+[2021.10.14-22.09.42:719][793]LogAudio: Display: Audio Device (ID: 73) registered with world '3HoriTest'.
+[2021.10.14-22.09.42:725][793]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.09.42:726][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.09.42:727][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:727][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.09.42:727][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:727][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.09.42:728][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:728][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.09.42:728][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:728][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.09.42:728][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:729][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.09.42:729][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:729][793]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.09.42
+[2021.10.14-22.09.42:729][793]LogWorld: Bringing up level for play took: 0.003243
+[2021.10.14-22.09.42:730][793]LogOnline: OSS: Creating online subsystem instance for: :Context_77
+[2021.10.14-22.09.42:734][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.09.42:734][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.09.42:736][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:736][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:741][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.09.42:742][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.09.42:743][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:743][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:747][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.09.42:747][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.09.42:748][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:748][793]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.42:751][793]PIE: Server logged in
+[2021.10.14-22.09.42:751][793]PIE: Play in editor total start time 0,301 seconds.
+[2021.10.14-22.09.44:355][928]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.09.44:356][928]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 294.094818
+[2021.10.14-22.09.44:356][928]LogBlueprintUserMessages: [HorizAnchor_2] true
+[2021.10.14-22.09.44:356][928]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 294.094818
+[2021.10.14-22.09.44:356][928]LogBlueprintUserMessages: [HorizAnchor_2] true
+[2021.10.14-22.09.44:357][928]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.09.44:357][928]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.09.44:359][928]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.44:359][928]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.45:694][ 37]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.09.45:695][ 37]LogBlueprintUserMessages: [HorizAnchor_2] 1
+[2021.10.14-22.09.50:062][415]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.09.50:062][415]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 148.571594
+[2021.10.14-22.09.50:062][415]LogBlueprintUserMessages: [HorizAnchor_2] false
+[2021.10.14-22.09.50:062][415]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 148.571594
+[2021.10.14-22.09.50:062][415]LogBlueprintUserMessages: [HorizAnchor_2] false
+[2021.10.14-22.09.51:108][507]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.09.51:109][507]LogBlueprintUserMessages: [HorizAnchor_2] 2
+[2021.10.14-22.09.53:624][708]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.09.53:624][708]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.09.53:624][708]LogBlueprintUserMessages: [DataActor_2] 001,11.149535,0.0,0
+[2021.10.14-22.09.53:625][708]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.09.53:626][708]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.09.53:654][708]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.09.53:659][708]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.09.53:678][708]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.10.14-22.09.53:678][708]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.09.53:679][708]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.09.53:697][708]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.09.53:701][708]LogUObjectHash: Compacting FUObjectHashTables data took   2.16ms
+[2021.10.14-22.09.53:722][709]LogPlayLevel: Display: Destroying online subsystem :Context_77
+[2021.10.14-22.09.55:204][859]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.09.55:213][859]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.10.14-22.09.55:213][859]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:09:55)
+[2021.10.14-22.09.55:213][859]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.09.55:234][859]LogPlayLevel: PIE: StaticDuplicateObject took: (0.021041s)
+[2021.10.14-22.09.55:236][859]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.09.55:236][859]LogPlayLevel: PIE: World Init took: (0.001662s)
+[2021.10.14-22.09.55:236][859]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.022866s)
+[2021.10.14-22.09.55:258][859]LogUObjectHash: Compacting FUObjectHashTables data took   1.92ms
+[2021.10.14-22.09.55:258][859]LogAudio: Display: Creating Audio Device:                 Id: 74, Scope: Unique, Realtime: True
+[2021.10.14-22.09.55:258][859]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.09.55:258][859]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.09.55:258][859]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.09.55:258][859]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.09.55:258][859]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.09.55:258][859]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.09.55:259][859]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.09.55:259][859]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.09.55:259][859]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.09.55:259][859]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.09.55:262][859]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.09.55:262][859]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.09.55:409][859]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.09.55:409][859]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.09.55:409][859]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.09.55:409][859]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.09.55:409][859]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.09.55:409][859]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.09.55:410][859]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.09.55:425][859]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.09.55:425][859]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.09.55:425][859]LogInit: FAudioDevice initialized.
+[2021.10.14-22.09.55:425][859]LogAudio: Display: Audio Device (ID: 74) registered with world '3HoriTest'.
+[2021.10.14-22.09.55:432][859]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.09.55:434][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.09.55:434][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:434][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.09.55:434][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:435][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.09.55:435][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:435][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.09.55:435][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:436][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.09.55:436][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:436][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.09.55:436][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:437][859]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.09.55
+[2021.10.14-22.09.55:437][859]LogWorld: Bringing up level for play took: 0.003429
+[2021.10.14-22.09.55:437][859]LogOnline: OSS: Creating online subsystem instance for: :Context_78
+[2021.10.14-22.09.55:442][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.09.55:442][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.09.55:444][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:444][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:450][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.09.55:450][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.09.55:451][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:452][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:456][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.09.55:456][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.09.55:457][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:457][859]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.55:460][859]PIE: Server logged in
+[2021.10.14-22.09.55:461][859]PIE: Play in editor total start time 0,249 seconds.
+[2021.10.14-22.09.56:735][963]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.09.56:735][963]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 294.094818
+[2021.10.14-22.09.56:735][963]LogBlueprintUserMessages: [HorizAnchor_2] true
+[2021.10.14-22.09.56:735][963]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 294.094818
+[2021.10.14-22.09.56:735][963]LogBlueprintUserMessages: [HorizAnchor_2] true
+[2021.10.14-22.09.56:737][963]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.09.56:738][963]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.09.56:739][963]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.56:739][963]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.09.58:055][ 70]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.09.58:056][ 70]LogBlueprintUserMessages: [HorizAnchor_2] 1
+[2021.10.14-22.09.59:694][204]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.09.59:694][204]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.09.59:694][204]LogBlueprintUserMessages: [DataActor_2] 001,4.475775,0.0,0
+[2021.10.14-22.09.59:695][204]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.09.59:696][204]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.09.59:707][204]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.09.59:711][204]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.09.59:731][204]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.09.59:732][204]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.09.59:733][204]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.09.59:754][204]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2021.10.14-22.09.59:775][205]LogPlayLevel: Display: Destroying online subsystem :Context_78
+[2021.10.14-22.10.01:227][352]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.10.01:238][352]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.10.14-22.10.01:238][352]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:10:01)
+[2021.10.14-22.10.01:238][352]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.10.01:258][352]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020201s)
+[2021.10.14-22.10.01:259][352]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.10.01:260][352]LogPlayLevel: PIE: World Init took: (0.001643s)
+[2021.10.14-22.10.01:260][352]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.022157s)
+[2021.10.14-22.10.01:282][352]LogUObjectHash: Compacting FUObjectHashTables data took   1.97ms
+[2021.10.14-22.10.01:283][352]LogAudio: Display: Creating Audio Device:                 Id: 75, Scope: Unique, Realtime: True
+[2021.10.14-22.10.01:283][352]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.10.01:283][352]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.10.01:283][352]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.10.01:283][352]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.10.01:283][352]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.10.01:283][352]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.10.01:283][352]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.10.01:283][352]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.10.01:284][352]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.10.01:284][352]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.10.01:287][352]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.10.01:287][352]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.10.01:397][352]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.10.01:397][352]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.10.01:398][352]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.10.01:398][352]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.10.01:398][352]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.10.01:398][352]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.10.01:398][352]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.10.01:413][352]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.10.01:413][352]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.10.01:413][352]LogInit: FAudioDevice initialized.
+[2021.10.14-22.10.01:413][352]LogAudio: Display: Audio Device (ID: 75) registered with world '3HoriTest'.
+[2021.10.14-22.10.01:421][352]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.10.01:422][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.10.01:423][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:423][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.10.01:423][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:424][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.10.01:424][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:424][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.10.01:424][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:424][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.10.01:425][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:425][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.10.01:425][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:426][352]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.10.01
+[2021.10.14-22.10.01:426][352]LogWorld: Bringing up level for play took: 0.003655
+[2021.10.14-22.10.01:426][352]LogOnline: OSS: Creating online subsystem instance for: :Context_79
+[2021.10.14-22.10.01:431][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.10.01:431][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.10.01:433][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:433][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:438][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.10.01:439][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.10.01:440][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:440][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:444][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.10.01:444][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.10.01:445][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:445][352]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.01:448][352]PIE: Server logged in
+[2021.10.14-22.10.01:449][352]PIE: Play in editor total start time 0,212 seconds.
+[2021.10.14-22.10.02:684][450]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.10.02:684][450]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 294.094818
+[2021.10.14-22.10.02:684][450]LogBlueprintUserMessages: [HorizAnchor_2] true
+[2021.10.14-22.10.02:684][450]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 294.094818
+[2021.10.14-22.10.02:684][450]LogBlueprintUserMessages: [HorizAnchor_2] true
+[2021.10.14-22.10.02:685][450]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.10.02:687][450]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.10.02:688][450]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.02:689][450]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.10.03:757][534]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.10.03:758][534]LogBlueprintUserMessages: [HorizAnchor_2] 1
+[2021.10.14-22.10.07:171][819]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.10.07:171][819]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 148.571594
+[2021.10.14-22.10.07:171][819]LogBlueprintUserMessages: [HorizAnchor_2] false
+[2021.10.14-22.10.07:171][819]LogBlueprintUserMessages: [HorizAnchor_2] 294.094849 vs (B) 148.571594
+[2021.10.14-22.10.07:172][819]LogBlueprintUserMessages: [HorizAnchor_2] false
+[2021.10.14-22.10.09:336][  6]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.10.09:337][  6]LogBlueprintUserMessages: [HorizAnchor_2] 2
+[2021.10.14-22.10.11:044][136]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.10.11:044][136]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.10.11:044][136]LogBlueprintUserMessages: [DataActor_2] 001,9.776669,0.0,0
+[2021.10.14-22.10.11:045][136]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.10.11:045][136]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.10.11:055][136]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.10.11:060][136]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.10.11:079][136]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.10.11:079][136]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.10.11:080][136]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.10.11:101][136]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2021.10.14-22.10.11:123][137]LogPlayLevel: Display: Destroying online subsystem :Context_79
+[2021.10.14-22.10.28:005][ 98]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.10.28:143][ 98]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2021.10.14-22.10.28:540][112]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-22.10.28:746][112]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchorF23D3C084699291DEA82589C5A148C5D.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-22.10.28:758][112]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-22.10.28:759][112]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.11.23:611][340]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.11.23:752][340]LogUObjectHash: Compacting FUObjectHashTables data took   2.65ms
+[2021.10.14-22.11.24:174][357]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-22.11.24:381][357]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchor11CFDD784544FF8BED02F3BB87EFF1EE.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-22.11.24:395][357]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-22.11.24:395][357]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.12.14:314][377]LogEditorTransaction: Undo Move Node
+[2021.10.14-22.12.14:593][381]LogEditorTransaction: Undo Move Node
+[2021.10.14-22.12.14:846][385]LogEditorTransaction: Undo Create Pin Link
+[2021.10.14-22.12.15:341][412]LogEditorTransaction: Undo Move Node
+[2021.10.14-22.12.33:822][533]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.12.33:972][533]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2021.10.14-22.12.34:240][543]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-22.12.34:445][543]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchor5D59540442E8331E484F80A342BDF6CA.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-22.12.34:459][543]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-22.12.34:459][543]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.13.20:130][468]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.13.20:273][468]LogUObjectHash: Compacting FUObjectHashTables data took   2.91ms
+[2021.10.14-22.13.21:024][510]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-22.13.21:233][510]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchor59333C5646397B4CF99C9192A6E48505.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-22.13.21:248][510]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-22.13.21:248][510]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.13.24:021][705]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.13.24:035][705]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.10.14-22.13.24:035][705]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:13:24)
+[2021.10.14-22.13.24:035][705]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.13.24:055][705]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020312s)
+[2021.10.14-22.13.24:056][705]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.13.24:056][705]LogPlayLevel: PIE: World Init took: (0.001362s)
+[2021.10.14-22.13.24:057][705]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.021827s)
+[2021.10.14-22.13.24:080][705]LogUObjectHash: Compacting FUObjectHashTables data took   2.70ms
+[2021.10.14-22.13.24:081][705]LogAudio: Display: Creating Audio Device:                 Id: 76, Scope: Unique, Realtime: True
+[2021.10.14-22.13.24:081][705]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.13.24:081][705]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.13.24:081][705]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.13.24:081][705]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.13.24:081][705]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.13.24:081][705]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.13.24:081][705]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.13.24:081][705]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.13.24:082][705]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.13.24:082][705]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.13.24:085][705]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.13.24:085][705]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.13.24:247][705]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.13.24:247][705]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.13.24:247][705]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.13.24:247][705]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.13.24:248][705]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.13.24:248][705]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.13.24:248][705]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.13.24:263][705]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.13.24:263][705]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.13.24:263][705]LogInit: FAudioDevice initialized.
+[2021.10.14-22.13.24:263][705]LogAudio: Display: Audio Device (ID: 76) registered with world '3HoriTest'.
+[2021.10.14-22.13.24:273][705]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.13.24:274][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.13.24:275][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:275][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.13.24:275][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:275][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.13.24:275][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:276][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.13.24:276][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:276][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.13.24:276][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:276][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.13.24:277][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:277][705]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.13.24
+[2021.10.14-22.13.24:277][705]LogWorld: Bringing up level for play took: 0.003343
+[2021.10.14-22.13.24:278][705]LogOnline: OSS: Creating online subsystem instance for: :Context_80
+[2021.10.14-22.13.24:282][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.13.24:283][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.13.24:284][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:284][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:290][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.13.24:290][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.13.24:291][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:291][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:295][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.13.24:295][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.13.24:296][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:297][705]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.24:299][705]PIE: Server logged in
+[2021.10.14-22.13.24:300][705]PIE: Play in editor total start time 0,271 seconds.
+[2021.10.14-22.13.26:317][873]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.13.26:318][873]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.13.26:319][873]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.13.26:320][873]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.26:321][873]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.27:695][986]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.13.27:696][986]LogBlueprintUserMessages: [HorizAnchor_2] 1
+[2021.10.14-22.13.30:804][266]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.13.31:771][358]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.13.34:524][620]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.13.34:757][642]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.13.36:226][782]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.13.36:227][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.ProceduralMesh' 
+[2021.10.14-22.13.36:228][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.ProceduralMesh' 
+[2021.10.14-22.13.36:229][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.36:230][782]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.37:657][914]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.13.37:657][914]LogBlueprintUserMessages: [HorizAnchor_2] 2
+[2021.10.14-22.13.40:457][178]LogBlueprintUserMessages: [HorizAnchor_2] PreviousTransition
+[2021.10.14-22.13.40:463][178]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_11.ProceduralMesh' 
+[2021.10.14-22.13.40:464][178]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_11.ProceduralMesh' 
+[2021.10.14-22.13.40:466][178]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.40:466][178]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.40:469][178]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.ProceduralMesh' 
+[2021.10.14-22.13.40:470][178]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.ProceduralMesh' 
+[2021.10.14-22.13.40:472][178]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.40:472][178]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.13.41:757][283]LogBlueprintUserMessages: [HorizAnchor_2] PreviousScene
+[2021.10.14-22.13.41:757][283]LogBlueprintUserMessages: [HorizAnchor_2] 1
+[2021.10.14-22.13.44:856][559]LogBlueprintUserMessages: [HorizAnchor_2] PreviousTransition
+[2021.10.14-22.13.46:153][663]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.13.46:153][663]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.13.46:153][663]LogBlueprintUserMessages: [DataActor_2] 001,22.110048,0.0,0
+[2021.10.14-22.13.46:155][663]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.13.46:155][663]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.13.46:175][663]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.13.46:180][663]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.13.46:200][663]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.10.14-22.13.46:200][663]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.13.46:200][663]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.13.46:218][663]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.13.46:222][663]LogUObjectHash: Compacting FUObjectHashTables data took   2.17ms
+[2021.10.14-22.13.46:247][664]LogPlayLevel: Display: Destroying online subsystem :Context_80
+[2021.10.14-22.13.48:608][815]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-22.13.48:812][815]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchor1590C2064893C9A81B0DB99D3F93EDC1.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-22.13.48:826][815]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-22.13.48:827][815]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.15.19:343][968]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.15.19:489][968]LogUObjectHash: Compacting FUObjectHashTables data took   2.90ms
+[2021.10.14-22.15.59:733][226]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.15.59:875][226]LogUObjectHash: Compacting FUObjectHashTables data took   2.67ms
+[2021.10.14-22.16.08:650][742]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.16.08:797][742]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2021.10.14-22.17.08:008][ 19]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
+[2021.10.14-22.17.08:102][ 19]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/3HoriTest_Auto4071B4C2A4B817863C59CFEB49195BC53.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Maps/3HoriTest_Auto4.umap'
+[2021.10.14-22.17.08:104][ 19]LogFileHelpers: Editor autosave (incl. external actors) for '/Game/Maps/3HoriTest' took 0.122
+[2021.10.14-22.17.08:104][ 19]LogFileHelpers: Editor autosave (incl. sublevels & external actors) for all levels took 0.122
+[2021.10.14-22.17.08:104][ 19]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/HoriAnchor] ([2] browsable assets)...
+[2021.10.14-22.17.08:104][ 19]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/HoriAnchor]
+[2021.10.14-22.17.08:306][ 19]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchor_Auto4960B4902445E9C8CC4D0FB921664E947.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/Autosaves/Game/Blueprints/HoriAnchor_Auto4.uasset'
+[2021.10.14-22.17.08:307][ 19]LogFileHelpers: Auto-saving content packages took 0.203
+[2021.10.14-22.21.48:837][361]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.21.48:985][361]LogUObjectHash: Compacting FUObjectHashTables data took   2.92ms
+[2021.10.14-22.21.49:589][389]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-22.21.49:800][389]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchorC41DC25645BDF930C9C4988D0761B9AF.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-22.21.49:816][389]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-22.21.49:816][389]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.22.44:213][380]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.22.44:365][380]LogUObjectHash: Compacting FUObjectHashTables data took   2.67ms
+[2021.10.14-22.22.45:407][437]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-22.22.45:624][437]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchorE6C7151B4B4D451434FCE09D24254445.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-22.22.45:639][437]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-22.22.45:639][437]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.23.13:684][ 60]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.23.13:835][ 60]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2021.10.14-22.23.15:301][160]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.23.15:311][160]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.10.14-22.23.15:311][160]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:23:15)
+[2021.10.14-22.23.15:342][160]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.23.15:360][160]LogPlayLevel: PIE: StaticDuplicateObject took: (0.017661s)
+[2021.10.14-22.23.15:361][160]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.23.15:361][160]LogPlayLevel: PIE: World Init took: (0.001330s)
+[2021.10.14-22.23.15:362][160]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.019193s)
+[2021.10.14-22.23.15:385][160]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
+[2021.10.14-22.23.15:385][160]LogAudio: Display: Creating Audio Device:                 Id: 77, Scope: Unique, Realtime: True
+[2021.10.14-22.23.15:386][160]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.23.15:386][160]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.23.15:386][160]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.23.15:386][160]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.23.15:386][160]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.23.15:386][160]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.23.15:386][160]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.23.15:386][160]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.23.15:386][160]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.23.15:386][160]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.23.15:390][160]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.23.15:390][160]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.23.15:549][160]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.23.15:550][160]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.23.15:550][160]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.23.15:550][160]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.23.15:550][160]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.23.15:550][160]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.23.15:550][160]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.23.15:565][160]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.23.15:565][160]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.23.15:565][160]LogInit: FAudioDevice initialized.
+[2021.10.14-22.23.15:565][160]LogAudio: Display: Audio Device (ID: 77) registered with world '3HoriTest'.
+[2021.10.14-22.23.15:573][160]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.23.15:574][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.23.15:574][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:575][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.23.15:575][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:575][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.23.15:575][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:575][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.23.15:576][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:576][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.23.15:576][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:576][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.23.15:576][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:577][160]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.23.15
+[2021.10.14-22.23.15:577][160]LogWorld: Bringing up level for play took: 0.003340
+[2021.10.14-22.23.15:577][160]LogOnline: OSS: Creating online subsystem instance for: :Context_81
+[2021.10.14-22.23.15:582][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.23.15:582][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.23.15:584][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:584][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:589][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.23.15:590][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.23.15:591][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:591][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:594][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.23.15:595][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.23.15:596][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:596][160]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.15:598][160]PIE: Server logged in
+[2021.10.14-22.23.15:599][160]PIE: Play in editor total start time 0,291 seconds.
+[2021.10.14-22.23.19:645][522]LogBlueprintUserMessages: [HorizAnchor_2] PreviousTransition
+[2021.10.14-22.23.19:875][541]LogBlueprintUserMessages: [HorizAnchor_2] PreviousScene
+[2021.10.14-22.23.21:330][665]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.23.21:331][665]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.23.21:331][665]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.23.21:334][665]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.21:335][665]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.22:712][784]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.23.22:712][784]LogBlueprintUserMessages: [HorizAnchor_2] 1
+[2021.10.14-22.23.25:111][996]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.23.25:340][ 18]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.23.26:040][ 85]LogBlueprintUserMessages: [HorizAnchor_2] PreviousTransition
+[2021.10.14-22.23.27:534][215]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.23.29:956][431]LogBlueprintUserMessages: [HorizAnchor_2] PreviousTransition
+[2021.10.14-22.23.31:151][534]LogBlueprintUserMessages: [HorizAnchor_2] PreviousScene
+[2021.10.14-22.23.31:152][534]LogBlueprintUserMessages: [HorizAnchor_2] 0
+[2021.10.14-22.23.33:617][744]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.23.33:618][744]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.ProceduralMesh' 
+[2021.10.14-22.23.33:620][744]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.ProceduralMesh' 
+[2021.10.14-22.23.33:621][744]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.33:621][744]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.34:827][847]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.23.34:828][847]LogBlueprintUserMessages: [HorizAnchor_2] 1
+[2021.10.14-22.23.36:972][ 35]LogBlueprintUserMessages: [HorizAnchor_2] PreviousTransition
+[2021.10.14-22.23.37:205][ 57]LogBlueprintUserMessages: [HorizAnchor_2] PreviousScene
+[2021.10.14-22.23.37:613][ 96]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.23.37:614][ 96]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_10.ProceduralMesh' 
+[2021.10.14-22.23.37:615][ 96]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_10.ProceduralMesh' 
+[2021.10.14-22.23.37:617][ 96]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_10.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.37:618][ 96]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_10.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.38:929][215]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.23.38:929][215]LogBlueprintUserMessages: [HorizAnchor_2] 2
+[2021.10.14-22.23.40:929][392]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.23.40:930][392]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.ProceduralMesh' 
+[2021.10.14-22.23.40:930][392]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.ProceduralMesh' 
+[2021.10.14-22.23.40:934][392]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.40:935][392]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_12.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.23.42:663][534]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.23.42:663][534]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.23.42:664][534]LogBlueprintUserMessages: [DataActor_2] 001,27.34746,0.0,0
+[2021.10.14-22.23.42:664][534]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.23.42:665][534]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.23.42:687][534]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.23.42:691][534]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.23.42:711][534]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.10.14-22.23.42:711][534]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.23.42:713][534]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.23.42:731][534]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.23.42:735][534]LogUObjectHash: Compacting FUObjectHashTables data took   2.20ms
+[2021.10.14-22.23.42:757][535]LogPlayLevel: Display: Destroying online subsystem :Context_81
+[2021.10.14-22.23.43:193][572]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/3HoriTest" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.10.14-22.23.43:215][572]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
+[2021.10.14-22.23.43:308][572]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/3HoriTest1843F5EF49E8A866B72B0FBB6DEC7602.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest.umap'
+[2021.10.14-22.23.43:320][572]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/3HoriTest_BuiltData" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest_BuiltData.uasset" SILENT=true
+[2021.10.14-22.23.43:325][572]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/3HoriTest_BuiltData2289BD5A4BAA53803BAFE2880AAC78EF.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest_BuiltData.uasset'
+[2021.10.14-22.23.43:344][572]AssetCheck: New page: Asset Save: multiple assets
+[2021.10.14-22.23.43:344][572]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/3HoriTest_BuiltData.3HoriTest_BuiltData
+[2021.10.14-22.23.43:345][572]LogContentValidation: Display: Validating World /Game/Maps/3HoriTest.3HoriTest
+[2021.10.14-22.24.10:874][159]BlueprintLog: New page: Compile HoriAnchor
+[2021.10.14-22.24.11:024][159]LogUObjectHash: Compacting FUObjectHashTables data took   2.71ms
+[2021.10.14-22.24.11:390][173]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/HoriAnchor" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset" SILENT=true
+[2021.10.14-22.24.11:608][173]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/HoriAnchor849C92BA470205A1237CA98FC2EFE8ED.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Blueprints/HoriAnchor.uasset'
+[2021.10.14-22.24.11:622][173]AssetCheck: New page: Asset Save: HoriAnchor
+[2021.10.14-22.24.11:622][173]LogContentValidation: Display: Validating Blueprint /Game/Blueprints/HoriAnchor.HoriAnchor
+[2021.10.14-22.24.13:989][338]LogTemp: Repeating last play command: Selected Viewport
+[2021.10.14-22.24.14:002][338]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.10.14-22.24.14:002][338]PIE: New page: PIE session: 3HoriTest (15 Oct 2021, 02:24:14)
+[2021.10.14-22.24.14:032][338]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.24.14:052][338]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019592s)
+[2021.10.14-22.24.14:053][338]LogAIModule: Creating AISystem for world 3HoriTest
+[2021.10.14-22.24.14:053][338]LogPlayLevel: PIE: World Init took: (0.001366s)
+[2021.10.14-22.24.14:053][338]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/3HoriTest.3HoriTest to /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest (0.021177s)
+[2021.10.14-22.24.14:077][338]LogUObjectHash: Compacting FUObjectHashTables data took   2.67ms
+[2021.10.14-22.24.14:078][338]LogAudio: Display: Creating Audio Device:                 Id: 78, Scope: Unique, Realtime: True
+[2021.10.14-22.24.14:078][338]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.10.14-22.24.14:078][338]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.10.14-22.24.14:078][338]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.10.14-22.24.14:078][338]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.10.14-22.24.14:078][338]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.10.14-22.24.14:078][338]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.10.14-22.24.14:078][338]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.10.14-22.24.14:078][338]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.10.14-22.24.14:078][338]LogAudio: Display: Using built-in audio occlusion.
+[2021.10.14-22.24.14:078][338]LogAudioMixer: Display: Initializing audio mixer.
+[2021.10.14-22.24.14:082][338]LogAudioMixer: Display: 0: FrontLeft
+[2021.10.14-22.24.14:082][338]LogAudioMixer: Display: 1: FrontRight
+[2021.10.14-22.24.14:252][338]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.10.14-22.24.14:253][338]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.10.14-22.24.14:253][338]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.10.14-22.24.14:253][338]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.10.14-22.24.14:253][338]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.10.14-22.24.14:253][338]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called
+[2021.10.14-22.24.14:253][338]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048
+[2021.10.14-22.24.14:269][338]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal()
+[2021.10.14-22.24.14:269][338]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time
+[2021.10.14-22.24.14:269][338]LogInit: FAudioDevice initialized.
+[2021.10.14-22.24.14:269][338]LogAudio: Display: Audio Device (ID: 78) registered with world '3HoriTest'.
+[2021.10.14-22.24.14:279][338]LogLoad: Game class is 'GameModeBase'
+[2021.10.14-22.24.14:281][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.ProceduralMesh' 
+[2021.10.14-22.24.14:281][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:281][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.ProceduralMesh' 
+[2021.10.14-22.24.14:281][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:282][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.ProceduralMesh' 
+[2021.10.14-22.24.14:282][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori7.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:283][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.ProceduralMesh' 
+[2021.10.14-22.24.14:283][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori9.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:283][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.ProceduralMesh' 
+[2021.10.14-22.24.14:283][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori11.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:283][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.ProceduralMesh' 
+[2021.10.14-22.24.14:284][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori13.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:284][338]LogWorld: Bringing World /Game/Maps/UEDPIE_0_3HoriTest.3HoriTest up for play (max tick rate 0) at 2021.10.15-00.24.14
+[2021.10.14-22.24.14:284][338]LogWorld: Bringing up level for play took: 0.004002
+[2021.10.14-22.24.14:285][338]LogOnline: OSS: Creating online subsystem instance for: :Context_82
+[2021.10.14-22.24.14:290][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.24.14:290][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.ProceduralMesh' 
+[2021.10.14-22.24.14:292][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:292][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_0.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:298][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.24.14:299][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.ProceduralMesh' 
+[2021.10.14-22.24.14:300][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:300][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_2.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:305][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.24.14:305][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.ProceduralMesh' 
+[2021.10.14-22.24.14:307][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:307][338]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_4.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.14:310][338]PIE: Server logged in
+[2021.10.14-22.24.14:310][338]PIE: Play in editor total start time 0,313 seconds.
+[2021.10.14-22.24.19:519][767]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.24.19:521][767]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.24.19:521][767]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.ProceduralMesh' 
+[2021.10.14-22.24.19:523][767]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.19:523][767]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_6.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.21:524][914]LogBlueprintUserMessages: [HorizAnchor_2] NextScene
+[2021.10.14-22.24.21:524][914]LogBlueprintUserMessages: [HorizAnchor_2] 1
+[2021.10.14-22.24.23:036][ 33]LogBlueprintUserMessages: [HorizAnchor_2] NextTransition
+[2021.10.14-22.24.23:037][ 33]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.ProceduralMesh' 
+[2021.10.14-22.24.23:038][ 33]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.ProceduralMesh' 
+[2021.10.14-22.24.23:040][ 33]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.23:040][ 33]LogPhysics: Warning: Initialising Body : Body is mirrored but bGenerateMirroredCollision == false: Component: '/Game/Maps/UEDPIE_0_3HoriTest.3HoriTest:PersistentLevel.Hori_C_8.NODE_AddProceduralMeshComponent-0' 
+[2021.10.14-22.24.24:427][160]LogBlueprintUserMessages: [HorizAnchor_2] PreviousScene
+[2021.10.14-22.24.32:013][865]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.24.32:013][865]LogWorld: BeginTearingDown for /Game/Maps/UEDPIE_0_3HoriTest
+[2021.10.14-22.24.32:013][865]LogBlueprintUserMessages: [DataActor_2] 001,17.999887,0.0,0
+[2021.10.14-22.24.32:014][865]LogWorld: UWorld::CleanupWorld for 3HoriTest, bSessionEnded=true, bCleanupResources=true
+[2021.10.14-22.24.32:014][865]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.24.32:036][865]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.10.14-22.24.32:040][865]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.10.14-22.24.32:060][865]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2021.10.14-22.24.32:060][865]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.24.32:061][865]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called
+[2021.10.14-22.24.32:079][865]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.10.14-22.24.32:083][865]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2021.10.14-22.24.32:104][866]LogPlayLevel: Display: Destroying online subsystem :Context_82
+[2021.10.14-22.24.32:475][899]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/3HoriTest" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.10.14-22.24.32:497][899]LogUObjectHash: Compacting FUObjectHashTables data took   2.03ms
+[2021.10.14-22.24.32:588][899]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/3HoriTestB4F6EA29429EDCD045725BA14C0B255B.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest.umap'
+[2021.10.14-22.24.32:600][899]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/3HoriTest_BuiltData" FILE="../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest_BuiltData.uasset" SILENT=true
+[2021.10.14-22.24.32:606][899]LogSavePackage: Moving '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Saved/3HoriTest_BuiltData09E17A7A43CE92CC8C3539B8CA8C21CC.tmp' to '../../../../../../Users/hanji/Desktop/Workshop/Foldable_Spaces/Content/Maps/3HoriTest_BuiltData.uasset'
+[2021.10.14-22.24.32:623][899]AssetCheck: New page: Asset Save: multiple assets
+[2021.10.14-22.24.32:623][899]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Maps/3HoriTest_BuiltData.3HoriTest_BuiltData
+[2021.10.14-22.24.32:623][899]LogContentValidation: Display: Validating World /Game/Maps/3HoriTest.3HoriTest
