@@ -1,0 +1,52 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Add a new chunk by clicking the \*Insert Chunk\* button on the toolbar or by pressing \*Ctrl+Alt+I\*.
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*.
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+```{r}
+#check working directory
+setwd("C:/Users/hanji/Desktop/Workshop/Foldable_Spaces/Data")
+```
+
+```{r}
+#demographics
+dm_raw <- read.csv("results_survey.csv") #, header = TRUE, sep = ",")
+
+#male,female,
+demographics <- dm_raw[c(7,9:15)]
+
+paste("total participants:",nrow(demographics))
+paste("Female: ", sum(demographics$D1=="AO01"))
+paste("Male: ", sum(demographics$D1=="AO02"))
+
+paste("mean age: ",mean(demographics$D2))
+paste("sd age: ",sd(demographics$D2))
+paste("min age: ",min(demographics$D2))
+paste("max age: ",max(demographics$D2))
+
+#paste("mean experience: ",mean(demographics$D3))
+#paste("sd experience: ",sd(demographics$D3))
+
+
+```
+
+```{r}
+#import .csv into Global Environment
+acc1 <- read.csv("001_1AccordionTest_2021-10-22_143121.csv", header = FALSE, sep = ",") 
+
+#make scatterplot
+plot(acc1$V3,acc1$V4, main = paste(acc1$V1[1],"_Accordion"), xlab = "X", ylab = "y")
+
+
+
+```
