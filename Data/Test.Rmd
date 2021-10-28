@@ -16,13 +16,17 @@ The preview shows you a rendered HTML copy of the contents of the editor. Conseq
 ```{r}
 #check working directory
 setwd("C:/Users/hanji/Desktop/Workshop/Foldable_Spaces/Data")
+getwd()
 ```
 
 ```{r}
 #demographics
 dm_raw <- read.csv("results_survey.csv") #, header = TRUE, sep = ",")
 
-#male,female,
+#user experience
+dm_exp <- c(rep(1,sum(demographics$D3=="AO01")),rep(2,sum(demographics$D3=="AO02")),rep(3,sum(demographics$D3=="AO03")),rep(4,sum(demographics$D3=="AO04")),rep(5,sum(demographics$D3=="AO05")),rep(6,sum(demographics$D3=="AO06")),rep(7,sum(demographics$D3=="AO07")))
+           
+#male,female,etc.
 demographics <- dm_raw[c(7,9:15)]
 
 paste("total participants:",nrow(demographics))
@@ -34,8 +38,13 @@ paste("sd age: ",sd(demographics$D2))
 paste("min age: ",min(demographics$D2))
 paste("max age: ",max(demographics$D2))
 
-#paste("mean experience: ",mean(demographics$D3))
-#paste("sd experience: ",sd(demographics$D3))
+paste("mean experience: ",mean(dm_exp))
+paste("sd experience: ",sd(dm_exp))
+```
+
+```{r}
+#Load raw file from limesurvey
+raw = read.csv("results_survey.csv")
 
 
 ```
