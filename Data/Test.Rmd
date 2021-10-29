@@ -23,11 +23,11 @@ getwd()
 #demographics
 dm_raw <- read.csv("results_survey.csv") #, header = TRUE, sep = ",")
 
-#user experience
-dm_exp <- c(rep(1,sum(demographics$D3=="AO01")),rep(2,sum(demographics$D3=="AO02")),rep(3,sum(demographics$D3=="AO03")),rep(4,sum(demographics$D3=="AO04")),rep(5,sum(demographics$D3=="AO05")),rep(6,sum(demographics$D3=="AO06")),rep(7,sum(demographics$D3=="AO07")))
-           
 #male,female,etc.
 demographics <- dm_raw[c(7,9:15)]
+
+#user experience
+dm_exp <- c(rep(1,sum(demographics$D3=="AO01")),rep(2,sum(demographics$D3=="AO02")),rep(3,sum(demographics$D3=="AO03")),rep(4,sum(demographics$D3=="AO04")),rep(5,sum(demographics$D3=="AO05")),rep(6,sum(demographics$D3=="AO06")),rep(7,sum(demographics$D3=="AO07")))
 
 paste("total participants:",nrow(demographics))
 paste("Female: ", sum(demographics$D1=="AO01"))
@@ -43,9 +43,115 @@ paste("sd experience: ",sd(dm_exp))
 ```
 
 ```{r}
+#auxilary functions
+substrRight <- function(s){
+  substr(s, nchar(s), nchar(s))
+}
+intRight <- function(s){
+  as.integer(substr(s, nchar(s), nchar(s)))
+}
+code2trial <-function(code){
+  switch(intRight(code),"S&R", "Hor", "Ver", "Acc")
+}
+```
+
+```{r}
+#main functions 
+checkNormalDistribution <- function(data,parameter){
+  sw1 <- shapiro.test(data[data$Condition=='Acc',][[parameter]])
+  sw2 <- shapiro.test(data[data$Condition=='Ver',][[parameter]])
+  sw3 <- shapiro.test(data[data$Condition=='Hor',][[parameter]])
+  sw4 <- shapiro.test(data[data$Condition=='S&R',][[parameter]])
+  
+  print(paste("Normal distribution for all conditions: ",sw1$p.value>=.05 & sw2$p.value>=.05 & sw3$p.value>=.05 & sw4$p.value>=.05))
+}
+createBoxplot <- function(dataIn, parameter, title, pw, ylab=""){
+  data <- dataIn # can optionally change this to make a copy instead of reference
+  data$value <- data[[parameter]]
+  ma <- max(data$value)
+  mi <- min(data$value)
+  step <- (ma - mi) / 10
+  means <- aggregate(value ~  Condition, data, mean)
+  means$value <- round(means$value, digits = 2)
+  
+  sds <- round(aggregate(value ~ Condition, data, sd)$value, digits=2)
+  
+  g <- ggplot(data, aes(x=Condition, y=value)) + 
+    geom_boxplot(aes(fill=Condition), outlier.size = .6) +
+    labs(title = title) +
+    ylab(ylab) +
+    stat_summary(fun.y=mean, colour="darkred", geom="point", shape=18, size=3,show_guide = FALSE) + 
+    geom_text(data = means, aes(label = paste("M=",means$value), y = means$value - 0.45 * step), family = "LM Roman 10") +
+    plotTheme
+  if (!missing(pw)){
+    temp <- pw$p.value
+    df <- data.frame(expand.grid(dimnames(temp)),array(temp))
+    df <- na.omit(df)
+    df$p <- df$array.temp.
+    df$group1 <- df$Var1
+    df$group2 <- df$Var2
+    df$stars <- stars.pval(df$p)
+    df$y.position <- c(ma + 1 * step, ma + 3*step,ma + 5*step,ma + 2*step,ma + 4*step,ma + 1*step)
+    
+    g <- g  + stat_pvalue_manual(df, label = 'stars', hide.ns=TRUE)
+  }
+  g
+}
+```
+
+```{r}
 #Load raw file from limesurvey
 raw = read.csv("results_survey.csv")
+offset = 69-33
 
+#setup SUS presence
+SUSpresence = data.frame(ID=NA, Condition=NA, SUSq1=NA, SUSq2=NA, SUSq3=NA, SUSq4=NA, SUSq5=NA, SUSq6=NA)
+SUSpresence <- SUSpresence[FALSE,]
+
+sus1 <- raw[c(1,33,47:52)]
+sus2 <- raw[c(1,33+offset,47:52+offset)]
+sus3 <- raw[c(1,33+offset*2,47:52+offset*2)]
+sus4 <- raw[c(1,33+offset*3,47:52+offset*3)]
+
+names(sus1) <- names(SUSpresence)
+names(sus2) <- names(SUSpresence)
+names(sus3) <- names(SUSpresence)
+names(sus4) <- names(SUSpresence)
+
+SUSpresence <- rbind(SUSpresence, sus1)
+SUSpresence <- rbind(SUSpresence, sus2)
+SUSpresence <- rbind(SUSpresence, sus3)
+SUSpresence <- rbind(SUSpresence, sus4)
+
+#Clean up file + change participant input errors
+SUSpresence[c(3:8)] <- sapply(SUSpresence[c(3:8)], intRight)
+SUSpresence[c(2)] <- sapply(SUSpresence$Condition, code2trial)
+SUSpresence[1,2] <- "Acc"
+
+#check normal distribution
+SUSpresence$count <- as.integer(SUSpresence[3] > 5) + as.integer(SUSpresence[4] > 5) + as.integer(SUSpresence[5] > 5) + as.integer(SUSpresence[6] > 5) + as.integer(SUSpresence[7] > 5) + as.integer(SUSpresence[8] > 5)
+SUSpresence$average <- rowMeans(SUSpresence[3:8])
+
+checkNormalDistribution(SUSpresence,"count")
+checkNormalDistribution(SUSpresence,"average")
+
+#stat sanity checks
+#table(SUSpresence$ID, SUSpresence$Condition) #sanity check
+kruskal.test(average ~ Condition, data = SUSpresence) #average vs count
+friedman.test(average ~ Condition | ID, data = SUSpresence) #average vs count
+
+#pairwise.wilcox tests
+#pw <- pairwise.wilcox.test(SUSpresence$average, SUSpresence$Condition,
+#                           p.adjust.method = "bonferroni",
+#                           paired = TRUE)
+#pw
+#createBoxplot(SUSpresence,'average',"Presence score Average",pw)
+
+#pw <- pairwise.wilcox.test(SUSpresence$count, SUSpresence$Condition,
+#                           p.adjust.method = "bonferroni",
+#                           paired = TRUE)
+#pw
+#createBoxplot(SUSpresence,'count',"Presence score Count",pw)
 
 ```
 
