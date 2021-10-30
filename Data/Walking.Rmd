@@ -1,0 +1,34 @@
+---
+title: "Walking"
+output: html_notebook
+---
+
+```{r}
+#check working directory
+setwd("C:/Users/hanji/Desktop/Workshop/Foldable_Spaces/Data")
+getwd()
+library(ggplot2)
+library(dplyr)
+library(gtools)
+library(ggpubr)
+library(likert)
+```
+
+```{r}
+#Load data and fix user input errors
+raw = read.csv("results_survey.csv")
+offset = 69-33
+raw[c(1)] <- seq(1,nrow(raw))
+raw[1,33] <- "AO04"
+
+```
+
+```{r}
+#walking example
+acc1 <- read.csv("001_1AccordionTest_2021-10-22_143121.csv", header = FALSE, sep = ",") 
+
+#make scatterplot
+plot(acc1$V3,acc1$V4, main = paste(acc1$V1[1],"_Accordion"), xlab = "X", ylab = "y")
+
+#get 
+```
