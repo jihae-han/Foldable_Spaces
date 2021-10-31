@@ -15,20 +15,132 @@ library(likert)
 ```
 
 ```{r}
+#auxiliary functions
+file2id <- function(s) {
+  as.integer(substr(s,1,3))
+}
+file2walking <- function (input, condition, namingcontainer){
+  cbind(lapply(input, file2id), rep(condition, length(input)), input)
+  #names(input) <- names(namingcontainer)
+}
+distxy <- function(x2,y2,x1,y1) {
+  sqrt((x2-x1)^2+(y2-y1)^2)
+}
+getrowindex <- function(container, id, condition){
+  tempcontainer <- container[which(container$Condition==condition),]
+  tempcontainer <- tempcontainer[tempcontainer$ID==id,]
+  as.integer(rownames(tempcontainer))  
+}
+
+```
+
+```{r}
 #Load data and fix user input errors
 raw = read.csv("results_survey.csv")
 offset = 69-33
 raw[c(1)] <- seq(1,nrow(raw))
 raw[1,33] <- "AO04"
 
+#Organise spatial metrics
+COGspatial = data.frame(ID=NA, Condition=NA, RoomSize=NA, Walked=NA)
+COGspatial <- COGspatial[FALSE,]
+
+spatial1 <- raw[c(1,33:35)]
+spatial2 <- raw[c(1,33:35+offset)]
+spatial3 <- raw[c(1,33:35+offset*2)]
+spatial4 <- raw[c(1,33:35+offset*3)]
+
+names(spatial1) <- names(COGspatial)
+names(spatial2) <- names(COGspatial)
+names(spatial3) <- names(COGspatial)
+names(spatial4) <- names(COGspatial)
+
+COGspatial <- rbind(COGspatial, spatial1)
+COGspatial <- rbind(COGspatial, spatial2)
+COGspatial <- rbind(COGspatial, spatial3)
+COGspatial <- rbind(COGspatial, spatial4)
+
+COGspatial[2] <- sapply(COGspatial$Condition, code2trial)
+
+#COG1: "how many times larger than the physical environment is the virtual environment? 
+gtcog1 = 96/16
+COGspatial$AccuracyRoom <- abs(COGspatial$RoomSize-gtcog1)/gtcog1*100
+
+#stats
+friedman.test(AccuracyRoom ~ Condition | ID, data = COGspatial) 
+res.aov <- aov(AccuracyRoom ~ Condition, data = COGspatial)
+summary(res.aov)
+
+pw_accuracyroom <- pairwise.wilcox.test(COGspatial$AccuracyRoom, COGspatial$Condition, p.adjust.method = "bonferroni", paired = TRUE)
+pw_accuracyroom
+createBoxplot(COGspatial,'AccuracyRoom',"Room Accuracy",pw_accuracyroom)
+
+
 ```
 
 ```{r}
-#walking example
-acc1 <- read.csv("001_1AccordionTest_2021-10-22_143121.csv", header = FALSE, sep = ",") 
+#list&organise all files in folder
+walking = data.frame(ID=NA, Condition=NA, Path=NA)
+walking <- walking[FALSE,]
+
+acc_path <- list.files(path = ".", pattern = "1AccordionTest")
+ver_path <- list.files(path = ".", pattern = "2VertTest")
+hor_path <- list.files(path = ".", pattern = "3HoriTest")
+snr_path <- list.files(path = ".", pattern = "4StopFadeReset")
+
+acc_raw <- file2walking(acc_path, "Acc", walking)
+ver_raw <- file2walking(ver_path, "Ver", walking)
+hor_raw <- file2walking(hor_path, "Hor", walking)
+snr_raw <- file2walking(snr_path, "S&R", walking)
+
+walking <- rbind(walking, acc_raw)
+walking <- rbind(walking, ver_raw)
+walking <- rbind(walking, hor_raw)
+walking <- rbind(walking, snr_raw)
+
+colnames(walking) <- c("ID", "Condition", "Path")
+walking$TotalWalked <- 0
+
+
+```
+
+```{r}
+#COGq2, distance accuracy
+COGspatial$TotalWalked <- 0
+COGspatial$AccuracyWalked <- 0
+
+
+```
+
+```{r}
+#walking example, Accordion 20
+walk = data.frame(Time=NA, X=NA, Y=NA)
+walk <- walk[FALSE,]
+
+acc20 <- read.csv(toString(walking[27,3]), header = FALSE, sep = ",") 
+acc20 <- acc20[c(2:4)]
+names(acc20) <- names(walk)
+
+#standard values
+print(paste("Total Time: ", (max(acc20[1])-min(acc20[1]))/60)) #time
+
+#Distance
+acc20$Dist <- 0
+for (x in 2:nrow(acc20)){
+  acc20$Dist[x] <- distxy(acc20$X[x],acc20$Y[x],acc20$X[x-1],acc20$Y[x-1])
+}
+print(paste("Total Distance: ", sum(acc20$Dist)/100, " meters"))
+
+
+#set walk accuracy
+walkaccuracy <- function(walk,id,condition) {
+  index <- getrowindex(COGspatial,id,condition)
+  COGspatial[index,]$TotalWalked <- sum(walk$Dist)/100
+  COGspatial[index,]$AccuracyWalked <- COGspatial[index,]$Walked/COGspatial[index,]$TotalWalked
+}
+walkaccuracy(acc20,20,"Acc")
 
 #make scatterplot
-plot(acc1$V3,acc1$V4, main = paste(acc1$V1[1],"_Accordion"), xlab = "X", ylab = "y")
+#plot(acc20$X,acc20$Y, main = paste("Accordion"), xlab = "X", ylab = "y")
 
-#get 
 ```
