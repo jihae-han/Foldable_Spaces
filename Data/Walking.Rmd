@@ -5,7 +5,8 @@ output: html_notebook
 
 ```{r}
 #check working directory
-setwd("C:/Users/hanji/Desktop/Workshop/Foldable_Spaces/Data")
+#setwd("C:/Users/hanji/Desktop/Workshop/Foldable_Spaces/Data")
+setwd("C:/Users/Jihae Han/Desktop/Projects/Foldable_Spaces/Data")
 getwd()
 library(ggplot2)
 library(dplyr)
@@ -21,10 +22,6 @@ file2id <- function(s) {
 }
 file2walking <- function (input, condition, namingcontainer){
   cbind(lapply(input, file2id), rep(condition, length(input)), input)
-  #names(input) <- names(namingcontainer)
-}
-distxy <- function(x2,y2,x1,y1) {
-  sqrt((x2-x1)^2+(y2-y1)^2)
 }
 getrowindex <- function(container, id, condition){
   tempcontainer <- container[which(container$Condition==condition),]
@@ -64,7 +61,7 @@ COGspatial[2] <- sapply(COGspatial$Condition, code2trial)
 
 #COG1: "how many times larger than the physical environment is the virtual environment? 
 gtcog1 = 96/16
-COGspatial$AccuracyRoom <- abs(COGspatial$RoomSize-gtcog1)/gtcog1*100
+COGspatial$AccuracyRoom <- (COGspatial$RoomSize-gtcog1)/gtcog1 * 100
 
 #stats
 friedman.test(AccuracyRoom ~ Condition | ID, data = COGspatial) 
@@ -99,43 +96,120 @@ walking <- rbind(walking, hor_raw)
 walking <- rbind(walking, snr_raw)
 
 colnames(walking) <- c("ID", "Condition", "Path")
-walking$Walked <- 0
+
+#Compute Data for Walking and organise dataframes into larger dataframe
+walkdata <- data.frame(ID=NA, Condition=NA, Time=NA, X=NA, Y=NA, Dist=NA, Velo=NA, Acce=NA)
+walking$Walked <- 0 #Walked is cognitive user estimation
 for (i in 1:nrow(walking)){
   walking[i,]$Walked <- COGspatial[getrowindex(COGspatial, walking[i,]$ID, walking[i,]$Condition),]$Walked 
 }
 
 walking$TotalWalked <- 0
-cwalkdist <- function (sourcepath) {
-  tempwalk <- read.csv(sourcepath, header = FALSE, sep = ",")
+walking$TotalTime <- 0
+walking$AveSpeed <- 0
+walking$MaxSpeed <- 0
+walking$MinAccel <- 0
+walking$MaxAccel <- 0
+walking$CountGait <- 0
+walking$CountRest <- 0
+
+walksample =data.frame(Time=NA, X=NA, Y=NA, Dist=NA, Velo=NA, Acce=NA)
+for (i in 1:1){
+  tempwalk <- read.csv(toString(walking[i,]$Path), header = FALSE, sep = ",")
   tempwalk <- tempwalk[c(2:4)]
   colnames(tempwalk) <- c("Time", "X", "Y")
   tempwalk$Dist <- 0
+  tempwalk$Velo <- 0
+  tempwalk$Acce <- 0
+  #distance
   for (x in 2:nrow(tempwalk)){
-    tempwalk$Dist[x] <- distxy(tempwalk$X[x],tempwalk$Y[x],tempwalk$X[x-1],tempwalk$Y[x-1])
+    tempwalk$Dist[x] <- sqrt((tempwalk$X[x]-tempwalk$X[x-1])^2 + (tempwalk$Y[x]-tempwalk$Y[x-1])^2)
   }
-  return(sum(tempwalk$Dist)/100)
+  tempwalk <- tempwalk[as.integer(which(tempwalk$Dist==max(tempwalk$Dist))):(nrow(tempwalk)-10*60),]
+  #tighten to 3min
+  if (tempwalk$Time[nrow(tempwalk)]-tempwalk$Time[1]>0) {
+    tempwalk <- tail(tempwalk, 3*60*60)
+  }
+  #velocity
+  for (x in 2:nrow(tempwalk)){
+    if(tempwalk$Time[x]==tempwalk$Time[x-1]) {
+      tempwalk$Velo[x] <- tempwalk$Velo[x-1]
+    }
+    else {
+      tempwalk$Velo[x] <- tempwalk$Dist[x]/(tempwalk$Time[x]-tempwalk$Time[x-1])
+    }
+  }
+  #acceleration
+  for (x in 3:nrow(tempwalk)) {
+    if (tempwalk$Time[x]==tempwalk$Time[x-1])
+    {
+      tempwalk$Acce[x] <- tempwalk$Acce[x-1]
+    }
+    else{
+      tempwalk$Acce[x] <- (tempwalk$Velo[x]-tempwalk$Velo[x-1])/(tempwalk$Time[x]- tempwalk$Time[x-1])
+    }
+  }
+  walkdata <- rbind(c(walking$ID[i], walking$Condition[i],tempwalk))
+  walking[i,]$TotalWalked <- sum(tempwalk$Dist)/100
+  walking[i,]$TotalTime <- (tempwalk$Time[nrow(tempwalk)]-tempwalk$Time[1])/60 
+  walking[i,]$AveSpeed <- walking[i,]$TotalWalked/walking[i,]$TotalTime * (1/60)
+  walking[i,]$MaxSpeed <- max(tempwalk$Velo) * (1/100) 
+  walking[i,]$MinAccel <- min(tempwalk$Acce) * (1/100)
+  walking[i,]$MaxAccel <- max(tempwalk$Acce) * (1/100)
 }
 
+for (i in 2:nrow(walking)){
+  tempwalk <- read.csv(toString(walking[i,]$Path), header = FALSE, sep = ",")
+  tempwalk <- tempwalk[c(2:4)]
+  colnames(tempwalk) <- c("Time", "X", "Y")
+  tempwalk$Dist <- 0
+  tempwalk$Velo <- 0
+  tempwalk$Acce <- 0
+  #distance
+  for (x in 2:nrow(tempwalk)){
+    tempwalk$Dist[x] <- sqrt((tempwalk$X[x]-tempwalk$X[x-1])^2 + (tempwalk$Y[x]-tempwalk$Y[x-1])^2)
+  }
+  tempwalk <- tempwalk[as.integer(which(tempwalk$Dist==max(tempwalk$Dist))):(nrow(tempwalk)-10*60),]
+  #tighten to 3min
+  if (tempwalk$Time[nrow(tempwalk)]-tempwalk$Time[1]>0) {
+    tempwalk <- tail(tempwalk, 3*60*60)
+  }
+  #velocity
+  for (x in 2:nrow(tempwalk)){
+    if(tempwalk$Time[x]==tempwalk$Time[x-1]) {
+      tempwalk$Velo[x] <- tempwalk$Velo[x-1]
+    }
+    else {
+      tempwalk$Velo[x] <- tempwalk$Dist[x]/(tempwalk$Time[x]-tempwalk$Time[x-1])
+    }
+  }
+  #acceleration
+  for (x in 3:nrow(tempwalk)) {
+    if (tempwalk$Time[x]==tempwalk$Time[x-1])
+    {
+      tempwalk$Acce[x] <- tempwalk$Acce[x-1]
+    }
+    else{
+      tempwalk$Acce[x] <- (tempwalk$Velo[x]-tempwalk$Velo[x-1])/(tempwalk$Time[x]- tempwalk$Time[x-1])
+    }
+  }
 
-walking$TotalWalked <- sapply(walking$Path, cwalkdist)
+  walkdata <- rbind(walkdata,c(walking$ID[i], walking$Condition[i],tempwalk))
+  walking[i,]$TotalWalked <- sum(tempwalk$Dist)/100
+  walking[i,]$TotalTime <- (tempwalk$Time[nrow(tempwalk)]-tempwalk$Time[1])/60 
+  walking[i,]$AveSpeed <- walking[i,]$TotalWalked/walking[i,]$TotalTime * (1/60)
+  walking[i,]$MaxSpeed <- max(tempwalk$Velo) * (1/100) 
+  walking[i,]$MinAccel <- min(tempwalk$Acce) * (1/100)
+  walking[i,]$MaxAccel <- max(tempwalk$Acce) * (1/100)
+  
+}
 ```
 
 ```{r}
-#------- Walked Distance accuracy ------------#
-
-#calculate walking distance accuracy
-walking$AccuracyWalked <-abs(walking$Walked-walking$TotalWalked)/walking$TotalWalked
-walking$Condition <- unlist(walking$Condition)
-
-walkinggroup <- walking %>% group_by(Condition)
-summarise(walkinggroup, m=mean(AccuracyWalked), sd=sd(AccuracyWalked), mi=min(AccuracyWalked), ma=max(AccuracyWalked))
-
-#COGq2, distance accuracy
+#------Distance Accuracy------#
 COGspatial$TotalWalked <- 0
 COGspatial$AccuracyWalked <- 0
-COGspatial$TotalWalked <- unlist(COGspatial$TotalWalked)
 
-#missing "18-stop&Reset, search for in other computer"
 for (i in 1:nrow(COGspatial)){
   index = getrowindex(walking, COGspatial[i,]$ID, COGspatial[i,]$Condition)
   if (length(index)>1){
@@ -148,36 +222,145 @@ for (i in 1:nrow(COGspatial)){
   }
 }
 
+COGspatial$AccuracyWalked <- (COGspatial$Walked-COGspatial$TotalWalked)/COGspatial$TotalWalked
+
+#stats
+friedman.test(AccuracyWalked ~ Condition | ID, data = COGspatial) 
+
+friedman.test(TotalWalked ~ Condition | ID, data = COGspatial) 
+pw_twalked <- pairwise.wilcox.test(COGspatial$TotalWalked, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_twalked
+createBoxplot(COGspatial,'TotalWalked',"Total Walked Distance",pw_twalked)
+
+pw_awalked <- pairwise.wilcox.test(COGspatial$AccuracyWalked, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_awalked
+createBoxplot(COGspatial,'AccuracyWalked',"Accuracy Walked Distance",pw_awalked)
+
+
 ```
 
 ```{r}
-#walking example, Accordion 20
-walk = data.frame(Time=NA, X=NA, Y=NA)
-walk <- walk[FALSE,]
+#--------Velocity, Ave & Max (m/s)---------#
+COGspatial$AveSpeed <- 0
+COGspatial$MaxSpeed <- 0
 
-acc20 <- read.csv("002_1AccordionTest_2021-10-22_164551.csv", header = FALSE, sep = ",") 
-acc20 <- acc20[c(2:4)]
-names(acc20) <- names(walk)
-
-#standard values
-print(paste("Total Time: ", (max(acc20[1])-min(acc20[1]))/60)) #time
-
-#Distance
-acc20$Dist <- 0
-for (x in 2:nrow(acc20)){
-  acc20$Dist[x] <- distxy(acc20$X[x],acc20$Y[x],acc20$X[x-1],acc20$Y[x-1])
+for (i in 1:nrow(COGspatial)){
+  index = getrowindex(walking, COGspatial[i,]$ID, COGspatial[i,]$Condition)
+  if (length(index)>1){
+    sumtime <- sum(walking[index,]$TotalTime*60)
+    COGspatial[i,]$AveSpeed <- sum(walking[index,]$AveSpeed*walking[index,]$TotalTime*60)/(sumtime)
+  }
+  else if (length(index)>0){
+    COGspatial[i,]$AveSpeed <- walking[index,]$AveSpeed
+    COGspatial[i,]$MaxSpeed <- walking[index,]$MaxSpeed
+  }
 }
-print(paste("Total Distance: ", sum(acc20$Dist)/100, " meters"))
 
-#set walk accuracy
-walkaccuracy <- function(walk,id,condition) {
-  index <- getrowindex(COGspatial,id,condition)
-  COGspatial[index,]$TotalWalked <- sum(walk$Dist)/100
-  COGspatial[index,]$AccuracyWalked <- COGspatial[index,]$Walked/COGspatial[index,]$TotalWalked
+#stats
+friedman.test(AveSpeed ~ Condition | ID, data = COGspatial) 
+friedman.test(TotalWalked ~ Condition | ID, data = COGspatial) 
+
+pw_avespeed <- pairwise.wilcox.test(COGspatial$AveSpeed, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_avespeed
+createBoxplot(COGspatial,'AveSpeed',"Average Speed (m/s)",pw_avespeed)
+
+pw_maxspeed <- pairwise.wilcox.test(COGspatial$MaxSpeed, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_maxspeed
+createBoxplot(COGspatial,'MaxSpeed',"Max Speed (m/s)",pw_maxspeed)
+
+
+```
+
+```{r}
+#--------Min/Max Acceleration (m/s^2)---------# Not Useful
+COGspatial$MinAccel <- 0
+COGspatial$MaxAccel <- 0
+
+for (i in 1:nrow(COGspatial)){
+  index = getrowindex(walking, COGspatial[i,]$ID, COGspatial[i,]$Condition)
+  if (length(index)>1){
+    COGspatial[i,]$MinAccel <- min(walking[index,]$MinAccel)
+    COGspatial[i,]$MaxAccel <- max(walking[index,]$MaxAccel)
+  }
+  else if (length(index)>0){
+    COGspatial[i,]$MinAccel <- walking[index,]$MinAccel
+    COGspatial[i,]$MaxAccel <- walking[index,]$MaxAccel
+  }
 }
-walkaccuracy(acc20,20,"Acc")
 
-#make scatterplot
-plot(acc20$X,acc20$Y, main = paste("Accordion"), xlab = "X", ylab = "y")
+#stats
+friedman.test(MinAccel ~ Condition | ID, data = COGspatial) 
+friedman.test(MaxAccel ~ Condition | ID, data = COGspatial) 
 
+pw_minaccel <- pairwise.wilcox.test(COGspatial$MinAccel, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_minaccel
+createBoxplot(COGspatial,'MinAccel',"Max Decceleration (m/s^2)",pw_minaccel)
+
+pw_maxaccel <- pairwise.wilcox.test(COGspatial$MaxAccel, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_maxaccel
+createBoxplot(COGspatial,'MaxSpeed',"Max Acceleration (m/s)",pw_maxaccel)
+```
+
+```{r}
+#--------Changes in Acceleration (m/s^2) to calculate continuous movement ---#
+checksign <- function(value) {
+  if (value >= 0)
+    return(TRUE)
+  else (value < 0)
+    return(FALSE)
+}
+
+#calculate changes in acceleration
+for (i in 1:nrow(walkdata)) { #nrow(walkdata)
+  count <- 0 
+  tempcount <- 0
+  currentaccel <- TRUE
+  for (index in 2:length(walkdata[i,]$Acce)) {
+    if (checksign(walkdata[i,]$Acce[index]) != checksign(walkdata[i,]$Acce[index-1])) {
+      tempcount <- tempcount + 1
+      if (tempcount > 59) { #if the acceleration/decceration is more than a second 
+        count <- count + 1
+        tempcount <- 0
+      }
+    }
+  }
+  walking[i,]$CountGait <- count
+}
+
+#input into COGspatial
+COGspatial$CountGait <- 0
+for (i in 1:nrow(COGspatial)){
+  index = getrowindex(walking, COGspatial[i,]$ID, COGspatial[i,]$Condition)
+  if (length(index)>1){
+    COGspatial[i,]$CountGait <- sum(walking[index,]$CountGait)
+  }
+  else if (length(index)>0){
+    COGspatial[i,]$CountGait <- walking[index,]$CountGait
+  }
+}
+#stats
+friedman.test(CountGait ~ Condition | ID, data = COGspatial) 
+
+pw_countgait <- pairwise.wilcox.test(COGspatial$CountGait, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_countgait
+createBoxplot(COGspatial,'CountGait',"Changes in Acceleration (sustained over min. 1sec)",pw_countgait)
+```
+
+```{r}
+#-------------Calculations of rest (idle time)-----------#
+threshold = 0.1 #m/s^2 
 ```

@@ -16,6 +16,7 @@ The preview shows you a rendered HTML copy of the contents of the editor. Conseq
 ```{r}
 #check working directory
 setwd("C:/Users/hanji/Desktop/Workshop/Foldable_Spaces/Data")
+setwd("C:/Users/Jihae Han/Desktop/Projects/Foldable_Spaces/Data")
 getwd()
 library(ggplot2)
 library(dplyr)
@@ -120,15 +121,16 @@ createBoxplot <- function(dataIn, parameter, title, pw, ylab=""){
 createBoxplot5 <- function(dataIn, parameter, title, pw, ylab=""){
   data <- dataIn # can optionally change this to make a copy instead of reference
   data$value <- data[[parameter]]
-  ma <- max(data$value)
-  mi <- min(data$value)
-  step <- (ma - mi) / 10
+  ma <- 100
+  mi <- -100
+  step <- 20
   means <- aggregate(value ~  Condition, data, mean)
   means$value <- round(means$value, digits = 2)
   
   sds <- round(aggregate(value ~ Condition, data, sd)$value, digits=2)
   
   g <- ggplot(data, aes(x=Condition, y=value)) + 
+    ylim(-100,100) +
     geom_boxplot(aes(fill=Condition), outlier.size = .6) +
     labs(title = title) +
     ylab(ylab) +

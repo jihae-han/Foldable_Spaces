@@ -1,0 +1,99 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+cwalkdist <- function (sourcepath) {
+  tempwalk <- read.csv(sourcepath, header = FALSE, sep = ",")
+  tempwalk <- tempwalk[c(2:4)]
+  colnames(tempwalk) <- c("Time", "X", "Y")
+  tempwalk$Dist <- 0
+  for (x in 2:nrow(tempwalk)){
+    tempwalk$Dist[x] <- distxy(tempwalk$X[x],tempwalk$Y[x],tempwalk$X[x-1],tempwalk$Y[x-1])
+  }
+  tempwalk <- tempwalk[as.integer(which(tempwalk$Dist==max(tempwalk$Dist))):(nrow(tempwalk)-10*60),]
+
+  return(sum(tempwalk$Dist)/100)
+}
+
+walking$TotalWalked <- sapply(walking$Path, cwalkdist)
+```
+
+```{r}
+
+#------- Walked Distance accuracy ------------#
+
+#calculate walking distance accuracy
+walking$AccuracyWalked <-abs(walking$Walked-walking$TotalWalked)/walking$TotalWalked
+walking$Condition <- unlist(walking$Condition)
+
+walkinggroup <- walking %>% group_by(Condition)
+summarise(walkinggroup, m=mean(AccuracyWalked), sd=sd(AccuracyWalked), mi=min(AccuracyWalked), ma=max(AccuracyWalked))
+
+#COGq2, distance accuracy
+COGspatial$TotalWalked <- 0
+COGspatial$AccuracyWalked <- 0
+COGspatial$TotalWalked <- unlist(COGspatial$TotalWalked)
+
+for (i in 1:nrow(COGspatial)){
+  index = getrowindex(walking, COGspatial[i,]$ID, COGspatial[i,]$Condition)
+  if (length(index)>1){
+    for (e in 1:length(index)) {
+      COGspatial[i,]$TotalWalked <- walking[index[e],]$TotalWalked + COGspatial[i,]$TotalWalked
+    }
+  }
+  else if (length(index)>0){
+    COGspatial[i,]$TotalWalked <- walking[index,]$TotalWalked
+  }
+}
+
+COGspatial$AccuracyWalked <- (COGspatial$Walked-COGspatial$TotalWalked)/COGspatial$TotalWalked
+
+#stats
+friedman.test(AccuracyWalked ~ Condition | ID, data = COGspatial) 
+
+friedman.test(TotalWalked ~ Condition | ID, data = COGspatial) 
+pw_twalked <- pairwise.wilcox.test(COGspatial$TotalWalked, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_twalked
+createBoxplot(COGspatial,'TotalWalked',"Total Walked Distance",pw_twalked)
+
+```
+
+```{r}
+#walking example, Accordion 20
+walk = data.frame(Time=NA, X=NA, Y=NA)
+walk <- walk[FALSE,]
+
+acc20 <- read.csv("001_3HoriTest_2021-10-22_145433.csv", header = FALSE, sep = ",") 
+acc20 <- acc20[c(2:4)]
+names(acc20) <- names(walk)
+
+#standard values
+print(paste("Total Time: ", (max(acc20[1])-min(acc20[1]))/60)) #time
+
+#Distance
+acc20$Dist <- 0
+for (x in 2:nrow(acc20)){
+  acc20$Dist[x] <- distxy(acc20$X[x],acc20$Y[x],acc20$X[x-1],acc20$Y[x-1])
+}
+print(paste("Total Distance: ", sum(acc20$Dist)/100, " meters"))
+
+acc20 <- acc20[as.integer(which(acc20$Dist==max(acc20$Dist))):(nrow(acc20)-10*60),]
+#print(paste("Total Distance w/out start: ",sum(acc20$Dist)/100, " meters"))
+
+
+#make scatterplot
+plot(acc20$X,acc20$Y, main = paste("Accordion"), xlab = "X", ylab = "y")
+```
+
+```{r}
+#test graph
+plot(tempwalk$X,tempwalk$Y, main = paste("Walk Position"), xlab = "X", ylab = "y")
+
+plot(tempwalk$Time, tempwalk$Velo/100, main = paste("Velocity"), xlab = "Time(s)", ylab = "Velocity(m/s)", cex=.75)
+
+plot(tempwalk$Time, tempwalk$Acce/100, main = paste("Acceleration"), xlab = "Time(s)", ylab = "Acceleration(m/s)", cex=.75)
+```
