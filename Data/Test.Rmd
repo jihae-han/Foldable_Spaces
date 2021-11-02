@@ -189,6 +189,23 @@ SUSpresence[c(3:8)] <- sapply(SUSpresence[c(3:8)], intRight)
 SUSpresence[c(2)] <- sapply(SUSpresence$Condition, code2trial)
 SUSpresence[1,2] <- "Acc"
 
+for (i in 1:nrow(SUSpresence)) {
+  c <- ""
+  if (i <= 20) {
+    c <- switch(SUSpresence[i,]$ID%%4+1,"S&R", "Acc", "Ver", "Hor")
+  }
+  else if (i <= 40) {
+    c <- switch(SUSpresence[i,]$ID%%4+1, "Acc", "Ver", "Hor", "S&R")
+  }
+  else if (i <= 60) {
+    c <- switch(SUSpresence[i,]$ID%%4+1, "Ver", "Hor", "S&R", "Acc")
+  }
+  else {
+    c <- switch(SUSpresence[i,]$ID%%4+1, "Hor", "S&R", "Acc", "Ver")
+  }
+  SUSpresence[i,]$Condition <- c
+}
+
 #check normal distribution
 SUSpresence$count <- as.integer(SUSpresence[3] > 5) + as.integer(SUSpresence[4] > 5) + as.integer(SUSpresence[5] > 5) + as.integer(SUSpresence[6] > 5) + as.integer(SUSpresence[7] > 5) + as.integer(SUSpresence[8] > 5)
 SUSpresence$average <- rowMeans(SUSpresence[3:8])
@@ -252,6 +269,7 @@ SSQ <- rbind(SSQ, ssq4)
 SSQ[c(2:18)] <- sapply(SSQ[c(2:18)], intRight)
 SSQ[c(2)] <- sapply(SSQ$Condition, code2trial)
 SSQ[1+nrow(demographics),2] <- "Acc"
+SSQ$Condition[21:nrow(SSQ)] <- SUSpresence$Condition
 
 #Setup scoring system calculations for SSQ
 nausea <- rowSums(SSQ[c(3,8:11,17,18)])
@@ -288,16 +306,18 @@ pw_disorientation <- pairwise.wilcox.test(SSQsymptoms$Disorientation, SSQsymptom
                            p.adjust.method = "bonferroni",
                            paired = TRUE)
 pw_disorientation
-createBoxplot5(SSQsymptoms,'Disorientation',"Presence Score",pw_disorientation)
+createBoxplot(SSQsymptoms,'Disorientation',"Presence Score",pw_disorientation)
 
 ```
 
 ```{r}
 #-------Ranking--------#
 raw = read.csv("results_survey.csv")
-offset = 69-33
+raw[c(1)] <- seq(1,nrow(raw))
 
+offset = 69-33
 rankingRaw <- raw[c(1,177:180)]
+
 ranking <- data.frame(ID=NA, Condition=NA,Rank=NA)
 ranking <- ranking[FALSE,]
 
@@ -319,6 +339,15 @@ ranking <- rbind(ranking, fourth)
 
 first[c(2)] <-sapply(first$Condition, code2trial)
 ranking[c(2)] <- sapply(ranking$Condition, code2trial)
+
+#---Fix input errors from participant----#
+#reversed the order of like to dislike (top/bottom)
+ranking[which(ranking$ID==3),]$Rank <- c("Fourth","Third","Second","First")
+#switched vertical and S&R
+ranking[which(ranking$ID==7),]$Rank <- c("Third","Second","First","Fourth")
+
+#----------------------------------------#
+
 
 ranking$numeric <- NA
 ranking[ranking$Rank == "First",]$numeric <- 1

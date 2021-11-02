@@ -5,8 +5,8 @@ output: html_notebook
 
 ```{r}
 #check working directory
-#setwd("C:/Users/hanji/Desktop/Workshop/Foldable_Spaces/Data")
-setwd("C:/Users/Jihae Han/Desktop/Projects/Foldable_Spaces/Data")
+setwd("C:/Users/hanji/Desktop/Workshop/Foldable_Spaces/Data")
+#setwd("C:/Users/Jihae Han/Desktop/Projects/Foldable_Spaces/Data")
 getwd()
 library(ggplot2)
 library(dplyr)
@@ -58,7 +58,22 @@ COGspatial <- rbind(COGspatial, spatial3)
 COGspatial <- rbind(COGspatial, spatial4)
 
 COGspatial[2] <- sapply(COGspatial$Condition, code2trial)
-
+for (i in 1:nrow(COGspatial)) {
+  c <- ""
+  if (i <= 20) {
+    c <- switch(COGspatial[i,]$ID%%4+1,"S&R", "Acc", "Ver", "Hor")
+  }
+  else if (i <= 40) {
+    c <- switch(COGspatial[i,]$ID%%4+1, "Acc", "Ver", "Hor", "S&R")
+  }
+  else if (i <= 60) {
+    c <- switch(COGspatial[i,]$ID%%4+1, "Ver", "Hor", "S&R", "Acc")
+  }
+  else {
+    c <- switch(COGspatial[i,]$ID%%4+1, "Hor", "S&R", "Acc", "Ver")
+  }
+  COGspatial[i,]$Condition <- c
+}
 #COG1: "how many times larger than the physical environment is the virtual environment? 
 gtcog1 = 96/16
 COGspatial$AccuracyRoom <- (COGspatial$RoomSize-gtcog1)/gtcog1 * 100
@@ -111,7 +126,6 @@ walking$MaxSpeed <- 0
 walking$MinAccel <- 0
 walking$MaxAccel <- 0
 walking$CountGait <- 0
-walking$CountRest <- 0
 
 walksample =data.frame(Time=NA, X=NA, Y=NA, Dist=NA, Velo=NA, Acce=NA)
 for (i in 1:1){
@@ -209,16 +223,34 @@ for (i in 2:nrow(walking)){
 #------Distance Accuracy------#
 COGspatial$TotalWalked <- 0
 COGspatial$AccuracyWalked <- 0
+COGspatial$TotalTime <- 0
+
+
+#CHECK DATA for (might be another file missing): 
+# 9, "Hor"
+# 11, "Acc" 
 
 for (i in 1:nrow(COGspatial)){
   index = getrowindex(walking, COGspatial[i,]$ID, COGspatial[i,]$Condition)
   if (length(index)>1){
+    temptime <- 0 
     for (e in 1:length(index)) {
-      COGspatial[i,]$TotalWalked <- walking[index[e],]$TotalWalked + COGspatial[i,]$TotalWalked
+      if (temptime < 3.1){
+        if (temptime + walking[index[e],]$TotalTime < 3.1) {
+          COGspatial[i,]$TotalWalked <- walking[index[e],]$TotalWalked + COGspatial[i,]$TotalWalked
+          temptime <- temptime + walking[index[e],]$TotalTime
+        }
+        else {
+          COGspatial[i,]$TotalWalked <- COGspatial[i,]$TotalWalked + tail(walking[index[e],]$TotalWalked, (3-temptime)*60*60)
+          temptime <- temptime + (3-temptime)
+        }
+      }
     }
+    COGspatial[i,]$TotalTime <- temptime
   }
   else if (length(index)>0){
     COGspatial[i,]$TotalWalked <- walking[index,]$TotalWalked
+    COGspatial[i,]$TotalTime <- walking[index,]$TotalTime
   }
 }
 
@@ -362,5 +394,145 @@ createBoxplot(COGspatial,'CountGait',"Changes in Acceleration (sustained over mi
 
 ```{r}
 #-------------Calculations of rest (idle time)-----------#
-threshold = 0.1 #m/s^2 
+threshold = 10 #cm/s
+
+walking$CountRest <- 0
+walking$Idle <- 0
+for (i in 1:nrow(walkdata)) {
+  temptime <- 0
+  idlecheck <- 0
+  idletime <- 0
+  for (index in 2:length(walkdata[i,]$Velo)) {
+    if (walkdata[i,]$Velo[index] < threshold){
+      temptime <- temptime + walkdata[i,]$Time[index]-walkdata[i,]$Time[index-1]
+      idletime <- idletime + walkdata[i,]$Time[index]-walkdata[i,]$Time[index-1]
+    }
+    else {
+      if (idletime > idlecheck) {
+        idlecheck <- idletime
+      }
+      else {
+        idletime <- 0
+      }
+    }
+  }
+  walking[i,]$CountRest <- idlecheck
+  walking[i,]$Idle <- temptime
+}
+
+#input into COGspatial
+COGspatial$CountRest <- 0
+COGspatial$Idle <- 0
+for (i in 1:nrow(COGspatial)){
+  index = getrowindex(walking, COGspatial[i,]$ID, COGspatial[i,]$Condition)
+  if (length(index)>1){
+    COGspatial[i,]$Idle <- sum(walking[index,]$Idle)/sum(walking[index,]$TotalTime)
+    COGspatial[i,]$CountRest <- max(walking[index,]$CountRest)
+  }
+  else if (length(index)>0){
+    COGspatial[i,]$Idle <- walking[index,]$Idle/walking[index,]$TotalTime
+    COGspatial[i,]$CountRest <- walking[index,]$CountRest
+  }
+  COGspatial[i,]$Idle <- COGspatial[i,]$Idle/60*100
+}
+
+#stats
+friedman.test(Idle ~ Condition | ID, data = COGspatial) 
+friedman.test(CountRest ~ Condition | ID, data = COGspatial) 
+
+pw_idle <- pairwise.wilcox.test(COGspatial$Idle, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_idle
+createBoxplot(COGspatial,'Idle',"Idle Time (%)",pw_idle)
+
+pw_countrest <- pairwise.wilcox.test(COGspatial$CountRest, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_countrest
+createBoxplot(COGspatial,'CountRest',"Max Idle (sec)",pw_countrest)
+
+```
+
+```{r}
+#---------------Out of Bounds------------------#
+walking$CountHelp <- 0
+padding <- 10 #cm, rounding up from the radius of human head with 60cm circ.
+
+for (i in 1:nrow(walkdata)) {  #Hor only = 46:68 #all = 1:nrow(walkdata)
+  count <- 0 
+  isout <- FALSE
+  bfout <- FALSE
+  for (index in 1:length(walkdata[i,]$X)) {
+    if (walking[i,]$Condition != "Hor") {
+      if ((walkdata[i,]$X[index] > 190) || (walkdata[i,]$Y[index]> 190) || (walkdata[i,]$X[index] < -190) || (walkdata[i,]$Y[index] < -190) ) {
+        bfout <- isout
+        isout <- TRUE
+        if (bfout != isout) {
+          count <- count + 1
+        }
+      }
+      else{
+        bfout <- isout
+        isout <- FALSE
+      }
+    }
+    else if (walking[i,]$Condition == "Hor"){
+      if ((walkdata[i,]$X[index] > 390 || walkdata[i,]$X[index] < 10 || walkdata[i,]$Y[index] > 190) || walkdata[i,]$Y[index] < -190) {
+        bfout <- isout
+        isout < TRUE
+        if (bfout != isout) {
+          cout <- count + 1
+        }
+        else {
+          bfout <- isout
+          isout <- FALSE
+        }
+      }
+    }
+  }
+  walking[i,]$CountHelp <- count
+}
+```
+
+```{r}
+#---------Graph: Out of Bounds--------#
+#Fix False Positives
+walking[1:25,]$CountHelp <- 0
+walking[72,]$CountHelp <- 3
+walking[79,]$CountHelp <- 0
+walking[83,]$CountHelp <- 2
+walking[85,]$CountHelp <- 3
+
+#setup COGspatial input
+COGspatial$CountHelp <- 0
+
+for (i in 1:nrow(COGspatial)){
+  index = getrowindex(walking, COGspatial[i,]$ID, COGspatial[i,]$Condition)
+  if (length(index)>1){
+    COGspatial[i,]$CountHelp <- sum(walking[index,]$CountHelp)
+  }
+  else if (length(index)>0){
+    COGspatial[i,]$CountHelp <- walking[index,]$CountHelp
+  }
+}
+
+#stats
+friedman.test(CountHelp ~ Condition | ID, data = COGspatial)
+#pw_counthelp <- pairwise.wilcox.test(COGspatial$CountHelp, COGspatial$Condition,
+#                           p.adjust.method = "bonferroni",
+#                           paired = TRUE)
+#pw_counthelp
+#createBoxplot(COGspatial,'CountHelp',"Walking Out of Bounds (count)",pw_counthelp)
+
+```
+
+```{r}
+#--------example of graphs--------#
+tempwalk <- walkdata[79,]
+plot(tempwalk$X,tempwalk$Y, main = paste("Walk Position"), xlab = "X", ylab = "y")
+
+plot(tempwalk$Time, tempwalk$Velo/100, main = paste("Velocity"), xlab = "Time(s)", ylab = "Velocity(m/s)", cex=.75)
+
+plot(tempwalk$Time, tempwalk$Acce/100, main = paste("Acceleration"), xlab = "Time(s)", ylab = "Acceleration(m/s)", cex=.75)
 ```

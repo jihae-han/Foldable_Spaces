@@ -1,0 +1,175 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+#check working directory
+setwd("C:/Users/hanji/Desktop/Workshop/Foldable_Spaces/Data")
+#setwd("C:/Users/Jihae Han/Desktop/Projects/Foldable_Spaces/Data")
+library(ggplot2)
+library(dplyr)
+library(gtools)
+library(ggpubr)
+library(likert)
+```
+
+```{r}
+#auxiliary functions
+substrRight <- function(s){
+  substr(s, nchar(s), nchar(s))
+}
+intRight <- function(s){
+  as.integer(substr(s, nchar(s), nchar(s)))
+}
+code2trial <-function(code){
+  switch(intRight(code),"S&R", "Hor", "Ver", "Acc","Pre")
+}
+```
+
+```{r}
+#-------Ground Truth for Memory Quiz--------#
+gtmemory =data.frame(COGq1=NA, COGq2=NA, COGq3=NA, COGq4=NA, COGq5=NA, COGq6=NA, COGq7=NA, COGq8=NA, COGq9=NA, COGq10=NA) 
+gtmemory <- gtmemory[FALSE,]
+
+gtmemory <- rbind(gtmemory, c(2,2,2,2,1,1,2,1,1,2))
+gtmemory <- rbind(gtmemory, c(1,2,1,2,2,1,1,2,1,2))
+gtmemory <- rbind(gtmemory, c(1,2,1,1,1,1,2,2,1,2))
+gtmemory <- rbind(gtmemory, c(2,2,2,1,2,2,1,1,1,2))
+gtmemory <- rbind(gtmemory, c(2,2,2,2,2,2,2,2,1,2))
+
+colnames(gtmemory) <- c("COGq1","COGq2","COGq3","COGq4","COGq5","COGq6","COGq7","COGq8","COGq9","COGq10")
+gtmemory$P <- 0
+gtmemory[1,]$P <- sum(gtmemory[1,][1:10]==1)
+gtmemory[2,]$P <- sum(gtmemory[2,][1:10]==1)
+gtmemory[3,]$P <- sum(gtmemory[3,][1:10]==1)
+gtmemory[4,]$P <- sum(gtmemory[4,][1:10]==1)
+gtmemory[5,]$P <- sum(gtmemory[5,][1:10]==1)
+
+gtmemory$N <- 10-gtmemory$P
+```
+
+```{r}
+#------------Memory Quiz---------------#
+raw = read.csv("results_survey.csv")
+offset = 69-33
+raw[c(1)] <- seq(1,nrow(raw))
+raw[1,33] <- "AO04"
+
+COGmemory = data.frame(ID=NA, Condition=NA, GT=NA, COGq1=NA, COGq2=NA, COGq3=NA, COGq4=NA, COGq5=NA, COGq6=NA, COGq7=NA, COGq8=NA, COGq9=NA, COGq10=NA)
+COGmemory <- COGmemory[FALSE,]
+
+memory1 <- raw[c(1,1,33,36:45)]
+memory2 <- raw[c(1,1,33+offset,36:45+offset)]
+memory3 <- raw[c(1,1,33+offset*2,36:45+offset*2)]
+memory4 <- raw[c(1,1,33+offset*3,36:45+offset*3)]
+
+names(memory1) <- names(COGmemory)
+names(memory2) <- names(COGmemory)
+names(memory3) <- names(COGmemory)
+names(memory4) <- names(COGmemory)
+
+memory1$GT <- rep(1,nrow(raw))
+memory2$GT <- rep(2,nrow(raw))
+memory3$GT <- rep(3,nrow(raw))
+memory4$GT <- rep(4,nrow(raw))
+
+memory3$GT[2] <- 5
+
+COGmemory <- rbind(COGmemory, memory1)
+COGmemory <- rbind(COGmemory, memory2)
+COGmemory <- rbind(COGmemory, memory3)
+COGmemory <- rbind(COGmemory, memory4)
+
+for (i in 1:nrow(COGmemory)) {
+  c <- ""
+  if (i <= 20) {
+    c <- switch(COGmemory[i,]$ID%%4+1,"S&R", "Acc", "Ver", "Hor")
+  }
+  else if (i <= 40) {
+    c <- switch(COGmemory[i,]$ID%%4+1, "Acc", "Ver", "Hor", "S&R")
+  }
+  else if (i <= 60) {
+    c <- switch(COGmemory[i,]$ID%%4+1, "Ver", "Hor", "S&R", "Acc")
+  }
+  else {
+    c <- switch(COGmemory[i,]$ID%%4+1, "Hor", "S&R", "Acc", "Ver")
+  }
+  COGmemory[i,]$Condition <- c
+}
+
+#TRUE = 1, FALSE = 2, UNCERTAIN = 3
+#Competence = True Positive Rate (TPR) - False Positive Rate (FPR)
+#TPR (sensitivity) = TP(true positive)/P(real positive)
+#FPR = FP(false positive)/P(real negative)
+#TNR (specificity)= TN(true negative)/P(real negative)
+
+COGmemory$TPR <- 0
+COGmemory$FPR <- 0
+COGmemory$TNR <- 0
+COGmemory$Competence <- 0
+
+for (i in 1:nrow(COGmemory)) {
+  TP <- 0
+  TN <- 0
+  FP <- 0
+  FN <- 0
+
+  groundtruth <- gtmemory[COGmemory$GT[i],]
+  for (gt in 1:10) {
+    if (groundtruth[1,gt]==1) #if positive
+    {
+      if (groundtruth[1,gt]==COGmemory[i,gt+3]) #'3' is the offset
+        TP <- TP + 1
+      else
+        FP <- FP + 1
+    }
+    else { #if negative
+      if (groundtruth[1,gt]==COGmemory[i,gt+3])
+        TN <- TN + 1
+      else 
+        FN <- FN + 1
+    }
+  }
+  COGmemory[i,]$TPR <- TP/groundtruth$P
+  COGmemory[i,]$FPR <- FP/groundtruth$N
+  COGmemory[i,]$TNR <- TN/groundtruth$N
+  COGmemory[i,]$Competence <- COGmemory[i,]$TPR - COGmemory[i,]$FPR 
+}
+
+memorygroup = COGmemory %>% group_by(Condition)
+summarise(memorygroup, TPR=mean(TPR), FPR=sd(FPR), TNR=mean(TNR), Competence=mean(Competence))
+summarise(memorygroup, MeanComp=mean(Competence), SDComp=sd(Competence), MedComp=median(Competence))
+
+print(paste("Competence SD: ", sd(COGmemory$Competence)))
+
+friedman.test(TPR ~ Condition | ID, data = COGmemory) 
+friedman.test(FPR ~ Condition | ID, data = COGmemory) 
+friedman.test(TNR ~ Condition | ID, data = COGmemory) 
+friedman.test(Competence ~ Condition | ID, data = COGmemory) 
+
+res.aov <- aov(Competence ~ Condition, data = COGmemory)
+summary(res.aov)
+
+#pw_tpr <- pairwise.wilcox.test(COGmemory$TPR, COGmemory$Condition,
+#                           p.adjust.method = "bonferroni",
+#                           paired = TRUE)
+#pw_tpr
+#createBoxplot(COGmemory,'TPR',"True Positive Rate",pw_tpr)
+
+pw_comp <- pairwise.wilcox.test(COGmemory$Competence, COGmemory$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_comp
+createBoxplot(COGmemory,'Competence',"Competence (TPR - FPR)",pw_comp)
+
+
+```
+
+```{r}
+#-------Sketch Map--------#
+#Position of search objects, graded on the relative position of the objects within the VE. 
+
+
+#Significant object score where the five most 
+```
