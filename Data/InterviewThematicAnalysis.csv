@@ -1,0 +1,81 @@
+ID	Condition	Door	lost	orient	lesspresent	immersive	scary	comfy	nausea	stable	choppy	fluid	hard	easy	cantsee	natural	playful	updown
+1	S&R	0	1															
+1	Hor	0						1										
+1	Ver	0												1				
+1	Acc	0				1				1								
+2	Acc	-1		1		1												
+2	Ver	-1							1									
+2	S&R	-1	1															
+2	Hor	-1	1										1		1			
+3	Ver	1														1		
+3	Hor	1						1										
+3	S&R	1	1															
+3	Acc	1			1													
+4	S&R	0									1							
+4	Acc	0																
+4	Hor	0																
+4	Ver	0																
+5	Hor	1													1			
+5	Ver	1		1														
+5	S&R	1														1		
+5	Acc	1																
+6	S&R	1								1						1		
+6	Hor	1													1			
+6	Acc	1								1								
+6	Ver	1							1									
+7	Hor	0							1									
+7	S&R	0	1		1													
+7	Acc	0													1			
+7	Ver	0		1		1			1							1		
+8	S&R	1												1				
+8	Ver	1	1				1											
+8	Hor	1											1			1		
+8	Acc	1			1													
+9	Ver	1							1									
+9	Acc	1			1													
+9	Hor	1																
+9	S&R	1														1		
+10	S&R	0			1			1										
+10	Acc	0							1									
+10	Ver	0							1									
+10	Hor	0							1						1	1		
+11	S&R	1									1							
+11	Ver	1				1					1							
+11	Hor	1			1											1		1
+11	Acc	1																
+12	S&R	1				1										1		
+12	Acc	1				1							1					1
+12	Ver	1				1												
+12	Hor	1				1							1					1
+13	S&R	1	1								1							
+13	Ver	1		1					1									
+13	Hor	1		1					1									
+13	Acc	1															1	
+14	Ver	0							1									
+14	Acc	0		1								1						1
+14	Hor	0		1								1			1			1
+14	S&R	0																
+15	Ver	0							1									
+15	Hor	0										1			1			
+15	Acc	0										1						
+15	S&R	0									1							
+16	Hor	1	1												1			
+16	S&R	1		1				1										
+16	Acc	1		1						1						1		
+16	Ver	1		1					1									
+17	S&R	0	1		1													
+17	Acc	0												1		1		
+17	Ver	0	1						1		1							
+17	Hor	0												1				
+18	Hor	1			1										1			
+18	S&R	1									1							
+18	Acc	1														1		
+18	Ver	1							1					1				
+19	Hor	0														1	1	
+19	Acc	0	1															
+19	Ver	0					1		1									
+19	S&R	0							1									
+20	Acc	0		1												1		
+20	S&R	0			1				1		1							
+20	Hor	0													1			
+20	Ver	0									1							

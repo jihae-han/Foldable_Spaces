@@ -285,6 +285,7 @@ for (i in 1:nrow(COGspatial)){
   if (length(index)>1){
     sumtime <- sum(walking[index,]$TotalTime*60)
     COGspatial[i,]$AveSpeed <- sum(walking[index,]$AveSpeed*walking[index,]$TotalTime*60)/(sumtime)
+    COGspatial[i,]$MaxSpeed <- max(walking[index,]$MaxSpeed)
   }
   else if (length(index)>0){
     COGspatial[i,]$AveSpeed <- walking[index,]$AveSpeed
@@ -302,12 +303,14 @@ pw_avespeed <- pairwise.wilcox.test(COGspatial$AveSpeed, COGspatial$Condition,
 pw_avespeed
 createBoxplot(COGspatial,'AveSpeed',"Average Speed (m/s)",pw_avespeed)
 
+
 pw_maxspeed <- pairwise.wilcox.test(COGspatial$MaxSpeed, COGspatial$Condition,
                            p.adjust.method = "bonferroni",
                            paired = TRUE)
 pw_maxspeed
 createBoxplot(COGspatial,'MaxSpeed',"Max Speed (m/s)",pw_maxspeed)
 
+summarise(coggroup1, mSpeed=mean(AveSpeed), sdSpeed=sd(AveSpeed),mMaxSpeed=mean(MaxSpeed), sdMaxSpeed=sd(MaxSpeed))
 
 ```
 
@@ -381,6 +384,8 @@ for (i in 1:nrow(COGspatial)){
   else if (length(index)>0){
     COGspatial[i,]$CountGait <- walking[index,]$CountGait
   }
+  COGspatial[i,]$CountGait <- COGspatial[i,]$CountGait/
+    (COGspatial[i,]$TotalTime*60)
 }
 #stats
 friedman.test(CountGait ~ Condition | ID, data = COGspatial) 
@@ -389,7 +394,7 @@ pw_countgait <- pairwise.wilcox.test(COGspatial$CountGait, COGspatial$Condition,
                            p.adjust.method = "bonferroni",
                            paired = TRUE)
 pw_countgait
-createBoxplot(COGspatial,'CountGait',"Changes in Acceleration (sustained over min. 1sec)",pw_countgait)
+createBoxplot(COGspatial,'CountGait',"Changes in Walking Gait per Second",pw_countgait)
 ```
 
 ```{r}
@@ -455,6 +460,54 @@ createBoxplot(COGspatial,'CountRest',"Max Idle (sec)",pw_countrest)
 ```
 
 ```{r}
+#--------------Idle Count--------------------#
+threshold = 10 #cm/sec
+pausethreshold = 1 #sec
+
+walking$IdleCount <- 0
+
+for (i in 1:nrow(walkdata)) {
+  idlecount <- 0
+  temptime <- 0
+  for (index in 2:length(walkdata[i,]$Velo)) {
+    if (walkdata[i,]$Velo[index] < threshold){
+      temptime <- temptime + walkdata[i,]$Time[index]-walkdata[i,]$Time[index-1]
+    }
+    else {
+      if (temptime > pausethreshold) {
+        temptime <- 0
+        idlecount <- idlecount + 1
+      }
+    }
+  }
+  walking[i,]$IdleCount <- idlecount
+  walking[i,]$Idle <- temptime
+}
+
+COGspatial$IdleCount <- 0
+for (i in 1:nrow(COGspatial)){
+  index = getrowindex(walking, COGspatial[i,]$ID, COGspatial[i,]$Condition)
+  if (length(index)>1){
+    COGspatial[i,]$IdleCount <- sum(walking[index,]$IdleCount)
+  }
+  else if (length(index)>0){
+    COGspatial[i,]$IdleCount <- walking[index,]$IdleCount
+  }
+  COGspatial[i,]$IdleCount <- COGspatial[i,]$IdleCount/(COGspatial[i,]$TotalTime*60)
+}
+
+#stats
+friedman.test(IdleCount ~ Condition | ID, data = COGspatial) 
+
+pw_idlecount <- pairwise.wilcox.test(COGspatial$IdleCount, COGspatial$Condition,
+                           p.adjust.method = "bonferroni",
+                           paired = TRUE)
+pw_idlecount
+createBoxplot(COGspatial,'IdleCount',"Rests per Second",pw_idlecount)
+
+```
+
+```{r}
 #---------------Out of Bounds------------------#
 walking$CountHelp <- 0
 padding <- 10 #cm, rounding up from the radius of human head with 60cm circ.
@@ -499,10 +552,11 @@ for (i in 1:nrow(walkdata)) {  #Hor only = 46:68 #all = 1:nrow(walkdata)
 #---------Graph: Out of Bounds--------#
 #Fix False Positives
 walking[1:25,]$CountHelp <- 0
-walking[72,]$CountHelp <- 3
+walking[72,]$CountHelp <- 1
 walking[79,]$CountHelp <- 0
-walking[83,]$CountHelp <- 2
-walking[85,]$CountHelp <- 3
+walking[39,]$CountHelp <- 1
+walking[83,]$CountHelp <- 1
+walking[85,]$CountHelp <- 1
 
 #setup COGspatial input
 COGspatial$CountHelp <- 0
@@ -519,12 +573,42 @@ for (i in 1:nrow(COGspatial)){
 
 #stats
 friedman.test(CountHelp ~ Condition | ID, data = COGspatial)
+res.aov <- aov(CountHelp ~ Condition, data = COGspatial)
+summary(res.aov)
+
+res.fried <- COGspatial %>% friedman_test(CountHelp ~ Condition | ID)
+res.fried
+
+COGspatial %>% friedman_effsize(CountHelp ~ Condition |ID)
+
+#pwc <- COGspatial %>% wilcox_test(CountHelp ~ Condition, paired = TRUE,
+pwc <- COGspatial %>% sign_test(CountHelp ~ Condition, 
+                 p.adjust.method = "bonferroni")
+                 
+pwc
+
+
+pwc <- pwc %>% add_xy_position(x = "Condition")
+ggboxplot(COGspatial, x = "Condition", y = "CountHelp", add = "point") +
+  stat_pvalue_manual(pwc, hide.ns = TRUE) +
+  labs(
+    subtitle = get_test_label(res.fried,  detailed = TRUE),
+    caption = get_pwc_label(pwc)
+  )
+
 #pw_counthelp <- pairwise.wilcox.test(COGspatial$CountHelp, COGspatial$Condition,
 #                           p.adjust.method = "bonferroni",
-#                           paired = TRUE)
+#                           paired = TRUE,)
 #pw_counthelp
 #createBoxplot(COGspatial,'CountHelp',"Walking Out of Bounds (count)",pw_counthelp)
 
+#pwc <- COGspatial %>% wilcox_test(CountHelp ~ Condition, paired = TRUE,
+#pwc <- COGspatial %>% sign_test(CountHelp ~ Condition, 
+                 #p.adjust.method = "bonferroni")
+                 
+#pwc
+
+summarise(COGspatial, )
 ```
 
 ```{r}
@@ -535,4 +619,68 @@ plot(tempwalk$X,tempwalk$Y, main = paste("Walk Position"), xlab = "X", ylab = "y
 plot(tempwalk$Time, tempwalk$Velo/100, main = paste("Velocity"), xlab = "Time(s)", ylab = "Velocity(m/s)", cex=.75)
 
 plot(tempwalk$Time, tempwalk$Acce/100, main = paste("Acceleration"), xlab = "Time(s)", ylab = "Acceleration(m/s)", cex=.75)
+```
+
+```{r}
+save_plots <- TRUE
+
+savePlot <- function(plotName){
+  if(save_plots){
+    ggsave(paste(".\\Plots\\",plotName,".png",sep=""),
+           width=14, 
+           height = 14,
+           units= "cm")
+  }
+}
+
+createBoxplot(COGspatial,'AveSpeed',"Mean Velocity (m/s)",pw_avespeed)
+savePlot("Velocity")
+
+createBoxplot(COGspatial,'CountGait',"Changes in Gait per Second",pw_countgait)
+savePlot("Gait")
+
+createBoxplot(COGspatial,'Idle',"Idle Time (%)",pw_idle)
+savePlot("IdleTime")
+
+createBoxplot(COGspatial,'IdleCount',"Rests per Second",pw_idlecount)
+savePlot("IdleCount")
+
+
+
+
+
+```
+
+```{r}
+coggroup1 = COGspatial %>% group_by(Condition)
+summarise(coggroup1, mSpeed=mean(AveSpeed), sdSpeed=sd(AveSpeed),mMaxSpeed=max(AveSpeed))
+summarise(coggroup1, mGait=mean(CountGait), sdGait=sd(CountGait),)
+
+summarise(coggroup1, mIdle=mean(Idle), sdIdle=sd(Idle), maxIdle=max(Idle), maxRest=mean(CountRest))
+
+summarise(coggroup1, mFreq=mean(IdleCount), sdFreq=sd(IdleCount))
+
+
+summarise(coggroup1, mSafe=mean(CountHelp), sdSafec=sd(CountHelp))
+
+
+```
+
+```{r}
+#-----Calculate Max Speed -------#
+walking$Max2 <- 0
+COGspatial$Max2 <- 0
+
+for (i in 1:nrow(walkdata)) { #nrow(walkdata)
+ walking[i,]$Max2 <- 
+   max(walkdata[i,]$Velo[which(walkdata[i,]$Velo < mean(walkdata[i,]$Velo)*2)])
+}
+
+for (i in 1:nrow(COGspatial)){
+  index = getrowindex(walking, COGspatial[i,]$ID, COGspatial[i,]$Condition)
+  COGspatial[i,]$Max2 <- max(walking[index,]$Max2)
+}
+friedman.test(Max2 ~ Condition | ID, data = COGspatial)
+coggroup1 = COGspatial %>% group_by(Condition)
+summarise(coggroup1, m(Max2), sdSpeed=sd(Max2))
 ```

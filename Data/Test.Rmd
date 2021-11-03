@@ -100,6 +100,7 @@ createBoxplot <- function(dataIn, parameter, title, pw, ylab=""){
   g <- ggplot(data, aes(x=Condition, y=value)) + 
     geom_boxplot(aes(fill=Condition), outlier.size = .6) +
     labs(title = title) +
+    xlab("") +
     ylab(ylab) +
     stat_summary(fun=mean, colour="darkred", geom="point", shape=18, size=3,show.legend = FALSE) + 
     geom_text(data = means, aes(label = paste("M=",means$value), y = means$value - 0.45 * step), family = "LM Roman 10") +
@@ -117,6 +118,8 @@ createBoxplot <- function(dataIn, parameter, title, pw, ylab=""){
     g <- g  + stat_pvalue_manual(df, label = 'stars', hide.ns=TRUE)
   }
   g
+  #g + theme(legend.position="bottom")
+
 }
 createBoxplot5 <- function(dataIn, parameter, title, pw, ylab=""){
   data <- dataIn # can optionally change this to make a copy instead of reference
@@ -228,6 +231,14 @@ pw_count <- pairwise.wilcox.test(SUSpresence$count, SUSpresence$Condition,
 pw_count
 createBoxplot(SUSpresence,'count',"Presence Score",pw_count)
 
+pwc <- SUSpresence %>% wilcox_test(count ~ Condition, paired = TRUE,
+                 p.adjust.method = "bonferroni")
+                 
+pwc
+
+res <- anova_test(data=SUSpresence, dv= count, wid=ID, within =Condition)
+res
+
 ```
 
 ```{r}
@@ -265,11 +276,13 @@ SSQ <- rbind(SSQ, ssq2)
 SSQ <- rbind(SSQ, ssq3)
 SSQ <- rbind(SSQ, ssq4)
 
+
 #Clean up file + change participant input errors
 SSQ[c(2:18)] <- sapply(SSQ[c(2:18)], intRight)
 SSQ[c(2)] <- sapply(SSQ$Condition, code2trial)
 SSQ[1+nrow(demographics),2] <- "Acc"
 SSQ$Condition[21:nrow(SSQ)] <- SUSpresence$Condition
+SSQ[c(3:18)] <- SSQ[c(3:18)] -1
 
 #Setup scoring system calculations for SSQ
 nausea <- rowSums(SSQ[c(3,8:11,17,18)])
@@ -306,7 +319,15 @@ pw_disorientation <- pairwise.wilcox.test(SSQsymptoms$Disorientation, SSQsymptom
                            p.adjust.method = "bonferroni",
                            paired = TRUE)
 pw_disorientation
-createBoxplot(SSQsymptoms,'Disorientation',"Presence Score",pw_disorientation)
+#createBoxplot(SSQsymptoms,'Disorientation',"Presence Score",pw_disorientation)
+
+res <- anova_test(data=SSQsymptoms, dv= Disorientation, wid=ID, within =Condition)
+res
+
+pwc <- SSQsymptoms %>% wilcox_test(Disorientation ~ Condition, paired = TRUE,
+                 p.adjust.method = "bonferroni")
+                 
+pwc
 
 ```
 
@@ -340,15 +361,6 @@ ranking <- rbind(ranking, fourth)
 first[c(2)] <-sapply(first$Condition, code2trial)
 ranking[c(2)] <- sapply(ranking$Condition, code2trial)
 
-#---Fix input errors from participant----#
-#reversed the order of like to dislike (top/bottom)
-ranking[which(ranking$ID==3),]$Rank <- c("Fourth","Third","Second","First")
-#switched vertical and S&R
-ranking[which(ranking$ID==7),]$Rank <- c("Third","Second","First","Fourth")
-
-#----------------------------------------#
-
-
 ranking$numeric <- NA
 ranking[ranking$Rank == "First",]$numeric <- 1
 ranking[ranking$Rank == "Second",]$numeric <- 2
@@ -376,7 +388,6 @@ rankingT[['Stop&Reset']] <- ranking[ranking$Condition=="S&R",]$Rank
 
 
 plot(likert(rankingT), col=c("#01857190", "#80cdc190", "#dfc27d90", "#a6611a90")) + ggtitle("Preference Ranking") + plotTheme
-
 
 
 ```

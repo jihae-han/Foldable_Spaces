@@ -4,10 +4,55 @@ output: html_notebook
 ---
 
 ```{r}
-library(RSQLite)
-library(gWidgetsRGtk2)
-library(DBI)
-library(igraph)
-library(RGtk2)
-library(RQDA)
+#check working directory
+setwd("C:/Users/hanji/Desktop/Workshop/Foldable_Spaces/Data")
+#setwd("C:/Users/Jihae Han/Desktop/Projects/Foldable_Spaces/Data")
+library(ggplot2)
+library(dplyr)
+library(gtools)
+library(ggpubr)
+library(likert)
+```
+
+```{r}
+#interview length
+
+```
+
+```{r}
+inw_raw <- read.csv("InterviewThematicAnalysis.csv" , header = TRUE, sep = ";")
+inw_raw <- inw_raw[1:19]
+names(inw_raw)[names(inw_raw)=='ï..ID'] <- 'ID'
+
+for (i in 1:nrow(inw_raw)) {
+  for (j in 1:ncol(inw_raw)) {
+    if (is.na(inw_raw[i,j]))
+      inw_raw[i,j] <- 0
+  }
+}
+
+inw_snr <- inw_raw[which(inw_raw$Condition=="S&R"),]
+inw_hor <- inw_raw[which(inw_raw$Condition=="Hor"),]
+inw_acc <- inw_raw[which(inw_raw$Condition=="Acc"),]
+inw_ver <- inw_raw[which(inw_raw$Condition=="Ver"),]
+
+inw = data.frame(a1=NA,a2=NA,a3=NA,a4=NA,a5=NA,a6=NA,a7=NA,a8=NA,a9=NA,a10=NA,a11=NA,a12=NA,a13=NA,a14=NA,a15=NA,a16=NA,a17=NA)
+inw <- inw[FALSE,]
+inw <- rbind(inw, c("S&R", sapply(inw_snr[c(4:19)], sum)))
+inw <- rbind(inw, c("Hor", sapply(inw_hor[c(4:19)], sum)))
+inw <- rbind(inw, c("Acc", sapply(inw_acc[c(4:19)], sum)))
+inw <- rbind(inw, c("Ver", sapply(inw_ver[c(4:19)], sum)))
+colnames(inw) <- names(inw_raw)[c(2,4:19)]
+
+```
+
+```{r}
+p <- ggplot(data=inw, 
+            aes(x=Condition, 
+                y=Count, 
+                fill= Condition)) + 
+  geom_bar(stat="identity") 
+p
+
+
 ```

@@ -163,6 +163,26 @@ pw_comp <- pairwise.wilcox.test(COGmemory$Competence, COGmemory$Condition,
 pw_comp
 createBoxplot(COGmemory,'Competence',"Competence (TPR - FPR)",pw_comp)
 
+```
+
+```{r}
+#--------Whether competency is positive-------#
+friedman.test(PosComp ~ Condition | ID, data = COGmemory) 
+
+COGmemory$PosComp <- 0
+for (i in 1:nrow(COGmemory)) {
+  if (COGmemory[i,]$Competence>0)
+    COGmemory[i,]$PosComp <- 1
+  else if (COGmemory[i,]$Competence<0)
+    COGmemory[i,]$PosComp <- (0)
+  else 
+    COGmemory[i,]$PosComp <- 0
+}
+
+pwc <- COGmemory %>% sign_test(PosComp ~ Condition, 
+                 p.adjust.method = "bonferroni")
+                 
+pwc
 
 ```
 
